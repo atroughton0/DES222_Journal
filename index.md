@@ -25,4 +25,10 @@ The task prescribed is to design and develop a responsive project. The following
 
 ## 1.1 Determining Design Purpose ##
 As the project is aimed to enhance user experience through a context-aware application it is evident that the Design Council’s Double Diamond methodology will be used to ensure human centred design factors are addressed throughout the tasks design development.
+![Image](Double_Diamond.png)
 
+Design Council. (n.d.). Framework for innovation. https://www.designcouncil.org.uk/our-resources/framework-for-innovation/
+
+In 2024 there has been a growing movement of digital detox through applications like BeReal with a focus on showing the world unfiltered, switching to 'dumb phones', eliminating distractions, and connecting back to nature. Although it may seem contradictory at first, this concept will be core to the development of this project by prioritising simplicity and disconnection.
+
+#### <em> “Travel far enough, you meet yourself" - David Mitchell, Cloud Atlas (2004) ####

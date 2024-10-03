@@ -25,7 +25,7 @@
 
 The task prescribed is to design and develop a responsive project. The following journal will display how ideas and concepts evolve from the the predetermined goal and through evalutation of existing projects contribute to the creation of the final design.
 
-## 1.1 Determining Design Purpose ##
+## 1.2 Determining Design Purpose ##
 As the project is aimed to enhance user experience through a context-aware application it is evident that the Design Council’s Double Diamond methodology will be used to ensure human centred design factors are addressed throughout the tasks design development.
 ![Image](Double_Diamond.png)
 
@@ -42,3 +42,7 @@ A concept proposal posted of Padlet was created from this rationale as well as a
 ![Image](Padlet.png)
 
 ![Image](collage.png)
+
+## 1.3 Research and Evaluation of Existing Solutions ##
+
+03/10/2024

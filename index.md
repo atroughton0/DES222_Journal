@@ -34,3 +34,9 @@ Design Council. (n.d.). Framework for innovation. https://www.designcouncil.org.
 In 2024 there has been a growing movement of digital detox through applications like BeReal with a focus on showing the world unfiltered, switching to 'dumb phones', eliminating distractions, and connecting back to nature. Although it may seem contradictory at first, this concept will be core to the development of this project by prioritising simplicity and disconnection.
 
 #### <em> “Travel far enough, you meet yourself" - David Mitchell, Cloud Atlas (2004) ####
+
+<strong> Rationale </strong> - The goal and expected outcome for this project's application to achieve by the end of the design process would be to support a healthier relationship with technology in everyday life by embracing digital wellbeing, promoting mindfulness, as well as presenting moment awareness through the simplicity of an adaptive journal to store meaningful experiences. 
+
+A concept proposal posted of Padlet was created from this rationale as well as a picture collage to brainstorm the aesthetic and functionality of the application.
+
+![Image](collage.png)

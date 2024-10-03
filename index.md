@@ -46,3 +46,17 @@ A concept proposal posted of Padlet was created from this rationale as well as a
 ## 1.3 Research and Evaluation of Existing Solutions ##
 
 03/10/2024
+
+With the rationale and core concepts defined prior in section 1.2 of this journal, it sets up criteria to evaluate existing solutions to identify strengths and weaknesses through SWAT analysis to contribute to the development of this project. The collage above visualises the brainstorming process powering the projects idea by merging certain features and functionality from various applications such as timeline tracking, and adding interactive media with the goal of creating a digital journal to authenticaly preserve how someone felt about a certain day or journey. The collage incorprating varing solutions offers a mixture of different means of usage, target audiences, and functionality which highlights why the SCAMPER ideology will be effective when utalising these numerous existing applications and other relevant hardware examples.
+
+### Existing Solution 1: Google Timelines ###
+
+### Existing Solution 2: Strava ###
+
+### Existing Solution 3: Apple Journals ###
+
+### Existing Solution 4: Project Life ###
+
+### Existing Solution 5: Hiker's Logbook ###
+
+### Existing Solution 6: Remerkable Tablet ###

@@ -17,7 +17,9 @@
 
 1.5	Final Design
 
-# 1. Conceptualisation #
+# 1. Conceptualisation # 
+
+02/10/2024
 ## 1.1 Task and Journal Statements ##
 <ins> Predetermined Goal:</ins> Create a context aware web application to enhance user experience through responsiveness and innovation 
 

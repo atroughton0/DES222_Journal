@@ -39,4 +39,6 @@ In 2024 there has been a growing movement of digital detox through applications 
 
 A concept proposal posted of Padlet was created from this rationale as well as a picture collage to brainstorm the aesthetic and functionality of the application.
 
+![Image](Padlet.png)
+
 ![Image](collage.png)

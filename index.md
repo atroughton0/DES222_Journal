@@ -69,10 +69,50 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ![Image](Images/strava.png)
 
+<strong> Strengths ✅ </strong>- 
+
+<strong> Weaknesses ❌ </strong>- 
+
+<strong> Opportunities 🧭 </strong>- 
+
+<strong> Threats ⚠️ </strong>- 
+
 ### Existing Solution 3: Apple Journals ###
+
+<strong> Strengths ✅ </strong>- 
+
+<strong> Weaknesses ❌ </strong>- 
+
+<strong> Opportunities 🧭 </strong>- 
+
+<strong> Threats ⚠️ </strong>- 
 
 ### Existing Solution 4: Project Life ###
 
+<strong> Strengths ✅ </strong>- 
+
+<strong> Weaknesses ❌ </strong>- 
+
+<strong> Opportunities 🧭 </strong>- 
+
+<strong> Threats ⚠️ </strong>- 
+
 ### Existing Solution 5: Hiker's Logbook ###
 
+<strong> Strengths ✅ </strong>- 
+
+<strong> Weaknesses ❌ </strong>- 
+
+<strong> Opportunities 🧭 </strong>- 
+
+<strong> Threats ⚠️ </strong>- 
+
 ### Existing Solution 6: Remerkable Tablet ###
+
+<strong> Strengths ✅ </strong>- 
+
+<strong> Weaknesses ❌ </strong>- 
+
+<strong> Opportunities 🧭 </strong>- 
+
+<strong> Threats ⚠️ </strong>- 

@@ -2,7 +2,7 @@
 #### Aaron Troughton, 1167270 ####
 # Journal Title: ‘Location Based Diary’ #
 
-![Image](sketch.png)
+![Image](Images/sketch.png)
 
 ## Index: ##
 **1. CONCEPTUALISATION**
@@ -27,7 +27,7 @@ The task prescribed is to design and develop a responsive project. The following
 
 ## 1.2 Determining Design Purpose ##
 As the project is aimed to enhance user experience through a context-aware application it is evident that the Design Council’s Double Diamond methodology will be used to ensure human centred design factors are addressed throughout the tasks design development.
-![Image](Double_Diamond.png)
+![Image](Images/Double_Diamond.png)
 
 Design Council. (n.d.). Framework for innovation. https://www.designcouncil.org.uk/our-resources/framework-for-innovation/
 
@@ -39,9 +39,9 @@ In 2024 there has been a growing movement of digital detox through applications 
 
 A concept proposal posted of Padlet was created from this rationale as well as a picture collage to brainstorm the aesthetic and functionality of the application.
 
-![Image](Padlet.png)
+![Image](Images/Padlet.png)
 
-![Image](collage.png)
+![Image](Images/collage.png)
 
 ## 1.3 Research and Evaluation of Existing Solutions ##
 
@@ -51,7 +51,7 @@ With the rationale and core concepts defined prior in section 1.2 of this journa
 
 ### Existing Solution 1: Google Timelines ###
 
-![Image](timelines.png)
+![Image](Images/timelines.png)
 
 05/10/2024
 

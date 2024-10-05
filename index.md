@@ -51,6 +51,20 @@ With the rationale and core concepts defined prior in section 1.2 of this journa
 
 ### Existing Solution 1: Google Timelines ###
 
+![Image](timelines.png)
+
+05/10/2024
+
+Google Timelines is a feature within the Google Maps mobile app and tracks the day of the user, provides insights into monthly travel patterns and exercise, as well as letting you view and edit travel history. Integration with Google Photos also allows users to view a detailed timeline of a day with reference to photos and notes from that day and location of origin, allowing for a detailed and time based journal entries. Some additional background information is that as a hobbyist photographer and outdoors traveler I had used Google Timelines for a couple of years for the reasons stated earlier in the design purpose and my experience from a user perspective of Google Timelines and some of the other solutions is a major part of why this project is being constructed and this experience will be used to find what features can be used as inspiration and what to avoid in the final proposal through SWOT analysis to ensure that user wants and needs are addressed effectively.
+
+<strong> Strengths ✅ </strong>- Google Maps is a free service only requiring a Google account. Great accuracy for road trips with GPS tracking and easily integrates with other Google services such as Google Photos. Application offers wide range of functionality.
+
+<strong> Weaknesses ❌ </strong>- Google recently rolled out an update which ended support for Google Timelines online and now only stores information locally for security concerns. This change eliminated cross functionality across devices and made recorded statistics and travel journeys inacurate. Another weakness here in responce to the tasks design purpose is that this apps features are not dedicated towards the intended audience which this task is aiming for which creates an oppotunity to design an app with this focus.
+
+<strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activies recorded in the journal.
+
+<strong> Threats ⚠️ </strong>- An inherent threat which would be consistant amoung all these solutions is recording of sensitive data regarding the users location and daily activities which must be protected when sent and stored. An option for local storage only could be provided to users.
+
 ### Existing Solution 2: Strava ###
 
 ### Existing Solution 3: Apple Journals ###

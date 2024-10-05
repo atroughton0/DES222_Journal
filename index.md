@@ -141,5 +141,7 @@ The goal of this task is to provide the ability to journal a wide range differen
 ![Image](Images/venn.png)
 
 ***
-## 1.3	Research and Evaluation of Existing Solutions ##
+## 1.4	Early Concepts ##
 06/10/2024
+
+Reviewing and evaluating existing solutions allowed for the task to define what is expected to be seen in the early concepts and final development. To further advance in the define stage of the double diamond and more towards to development of the application, three revisions and applicaiton diagrams will be produced to see how effective the proposed solutions are at achieving the task goal.

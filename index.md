@@ -131,6 +131,6 @@ User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hike
 
 Another relevant concept is nature journaling as seen in this video
 
-https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary
+[https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary](https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary)
 
 The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text.

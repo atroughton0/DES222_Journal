@@ -59,7 +59,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 <strong> Strengths ✅ </strong>- Google Maps is a free service only requiring a Google account. Great accuracy for road trips with GPS tracking and easily integrates with other Google services such as Google Photos. Application offers wide range of functionality.
 
-<strong> Weaknesses ❌ </strong>- Google recently rolled out an update which ended support for Google Timelines online and now only stores information locally for security concerns. This change eliminated cross functionality across devices and made recorded statistics and travel journeys inacurate. Another weakness here in responce to the tasks design purpose is that this apps features are not dedicated towards the intended audience which this task is aiming for which creates an oppotunity to design an app with this focus.
+<strong> Weaknesses ❌ </strong>- Google recently rolled out an update which ended support for Google Timelines online and now only stores information locally for security concerns. This change eliminated cross functionality across devices and made recorded statistics and travel journeys inacurate. Another weakness here in responce to the tasks design purpose is that this apps features are not dedicated towards the intended audience which this task is aiming for which creates an opportunity to design an app with this focus.
 
 <strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activies recorded in the journal.
 
@@ -69,13 +69,13 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ![Image](Images/strava.png)
 
-<strong> Strengths ✅ </strong>- 
+<strong> Strengths ✅ </strong>- Strava is the premier app when it comes to recording and tracking any outdoor based activity whether it be biking, walking, kayaking, swimming, skiing, it records all data and offers the millions of users insights into their performance and hobby activities. Satellite geotracking to work even in the most remote places. Avaliable on all platforms and works across devices. Generates routes and activies for you. Works with many popular accessories and health apps. Customisable map interface using mapbox API. Free app to install and use with premium plans avaliable. Can join clubs and compete in challenges.
 
-<strong> Weaknesses ❌ </strong>- 
+<strong> Weaknesses ❌ </strong>- Only in the context of this task is it a weakness but Strava acts as more of a social media platform where you share your trips with others and can compare performances and times with one another. In this projects use case of a private journal for self reflection, the concept of this apps functionalities will be utalised but with an app centred around single user without the social aspect which leads to the opportunities.
 
-<strong> Opportunities 🧭 </strong>- 
+<strong> Opportunities 🧭 </strong>- In comparison to the Google Maps API from the prior example, the mapbox API is much more accessible while offering a wide range of map customisation on a free plan with a 50,000 request limits which will work for this task. Incorprating a feature to link images to a certain time and location period to achieve the goal of being context aware and responsive.
 
-<strong> Threats ⚠️ </strong>- 
+<strong> Threats ⚠️ </strong>- Account security. If the project is aimed to work across devices, data must be managed securley and appropriately.
 
 ### Existing Solution 3: Apple Journals ###
 

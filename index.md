@@ -91,6 +91,8 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ### Existing Solution 4: Project Life ###
 
+![Image](Images/projectlife.png)
+
 <strong> Strengths ✅ </strong>- Project Life is a completely free app from Becky Higgins made to create digital scrapbooks easiley and is used as a teaching tool in primary school education. Offers an easy to use tool to journal in the form of visual imagery. App is intended to easily export digital scrapbooks and journals in a physical format, creating an egaging experience for the users.
 
 <strong> Weaknesses ❌ </strong>- Cannot save work to come back to later and does not offer much flexibility when it comes to what is able to be inserted into the scrapbook or journal. Offers a tool rather than an experience which in the case of this project does not satisfy the task goal. What is normaly basic functionality such as font selection are blocked by a pay barrier.
@@ -109,12 +111,12 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 <strong> Threats ⚠️ </strong>- 
 
-### Existing Solution 6: Remerkable Tablet ###
+### Existing Solution 6: Remerkable Paper Pro ###
 
-<strong> Strengths ✅ </strong>- 
+<strong> Strengths ✅ </strong>- Digitizes the paper journaling experience without loosing the authentic feel of writting on paper. The lightweight, colourful, E Ink tablet with local encryption and cross platform capability allows for a quality built smart device to journal notes in but without the distractions of everyday smartphones. Paper like feel is achieved through a textured surface to enhance the journaling experience on the go. Is designed solely for writing which allows for an unmatched journaling experience. A pen to write along with shapes and unlimited media support allows for endless customisation in journal entries.
 
-<strong> Weaknesses ❌ </strong>- 
+<strong> Weaknesses ❌ </strong>- High price barrier unlike the previous existing solutions. Ability to back up documents is another seperate subscription. Fragile device would not be ideal for the rougher, outdoor activities which this tasks intends to journal.
 
-<strong> Opportunities 🧭 </strong>- 
+<strong> Opportunities 🧭 </strong>- The other solutions looks at a service/application approach to the task goal but this offers a look into how hardware can be utalised for the same goal. As determined early in this tasks' journal, context aware software such as strava and timelines would most likely be the approach taken, but dedicated hardware to expand of the softwares impact towards the task rationale can be designed in future advancements of this idea.
 
-<strong> Threats ⚠️ </strong>- 
+<strong> Threats ⚠️ </strong>- Fragile and slim form factor makes the device easy to damage and misplace.

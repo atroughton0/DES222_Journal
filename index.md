@@ -103,13 +103,19 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ### Existing Solution 5: Hiker's Logbook ###
 
-<strong> Strengths ✅ </strong>- 
+![Image](Images/logbook.png)
 
-<strong> Weaknesses ❌ </strong>- 
+User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hikers_logbook_an_ultralight_journal_app/) displays the target audience and the intended use case of the task's responsive application. 
 
-<strong> Opportunities 🧭 </strong>- 
+<em> "I wanted to keep a daily journal of my mileage, major events of the day, and where I slept just to create some anchors to allow me to remember the day in the future."</em>
 
-<strong> Threats ⚠️ </strong>- 
+<strong> Strengths ✅ </strong>- This app was independently made by a hobbyist Aaron Byers non for profit to allow for an extremely light weight and easy to understand application which offers all statistics regarding hiking trips while offering the ability to take notes and journal each trip to look back on. This example is the closest at achieving the concept of journaling trips through location which is saught after in this task. Works offline without functionality loss. No account needed and is completely free to use.
+
+<strong> Weaknesses ❌ </strong>- Is only avaliable on iPhone devices which limits accessibility. This app is intended for hiking only but this must be expanded in the app being designed to support a wide range of hobbys. Uses manual input coordinates which is good for completely offline usage but a map API like mapbox will need to be used in the tasks revisions.
+
+<strong> Opportunities 🧭 </strong>- The minimalistic design and list display will be the ideal direction the UI will take. This will be explored further in low fidelity diagrams and in Figma prototypes further on in the journal. Each journal entry can have two sides like seen here, one with the trip data, mapping information, and photos with the other side of the entry being the reflection.
+
+<strong> Threats ⚠️ </strong>- Is a individualy made app and is not regulary supported.
 
 ### Existing Solution 6: Remerkable Paper Pro ###
 
@@ -122,3 +128,9 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- The other solutions looks at a service/application approach to the task goal but this offers a look into how hardware can be utalised for the same goal. As determined early in this tasks' journal, context aware software such as strava and timelines would most likely be the approach taken, but dedicated hardware to expand of the softwares impact towards the task rationale can be designed in future advancements of this idea.
 
 <strong> Threats ⚠️ </strong>- Fragile and slim form factor makes the device easy to damage and misplace.
+
+Another relevant concept is nature journaling as seen in this video
+
+https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary
+
+The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text.

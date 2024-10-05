@@ -16,6 +16,7 @@
 1.4	Early Concepts
 
 1.5	Final Design
+***
 
 # 1. Conceptualisation # 
 
@@ -25,6 +26,7 @@
 
 The task prescribed is to design and develop a responsive project. The following journal will display how ideas and concepts evolve from the the predetermined goal and through evalutation of existing projects contribute to the creation of the final design.
 
+***
 ## 1.2 Determining Design Purpose ##
 As the project is aimed to enhance user experience through a context-aware application it is evident that the Design Council’s Double Diamond methodology will be used to ensure human centred design factors are addressed throughout the tasks design development.
 ![Image](Images/Double_Diamond.png)
@@ -43,6 +45,7 @@ A concept proposal posted of Padlet was created from this rationale as well as a
 
 ![Image](Images/collage.png)
 
+***
 ## 1.3 Research and Evaluation of Existing Solutions ##
 
 03/10/2024
@@ -64,7 +67,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activies recorded in the journal.
 
 <strong> Threats ⚠️ </strong>- An inherent threat which would be consistant amoung all these solutions is recording of sensitive data regarding the users location and daily activities which must be protected when sent and stored. An option for local storage only could be provided to users.
-
+***
 ### Existing Solution 2: Strava ###
 
 ![Image](Images/strava.png)
@@ -76,7 +79,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- In comparison to the Google Maps API from the prior example, the mapbox API is much more accessible while offering a wide range of map customisation on a free plan with a 50,000 request limits which will work for this task. Incorprating a feature to link images to a certain time and location period to achieve the goal of being context aware and responsive.
 
 <strong> Threats ⚠️ </strong>- Account security. If the project is aimed to work across devices, data must be managed securley and appropriately.
-
+***
 ### Existing Solution 3: Apple Journals ###
 
 ![Image](Images/appjournal.jpg)
@@ -88,7 +91,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- Incorprating the feature to sort and filter entries as seen in Apple Journals will add interactiveness and reduce clutter in the proposed project. Daily notifications to enter in the journal could be an option provided but by default would need to be disabled to adhere to the task's theme of disconnection.
 
 <strong> Threats ⚠️ </strong>- Unlike the other solutions, this application is highly secure making the only real risk of backing up data to prevant data loss.
-
+***
 ### Existing Solution 4: Project Life ###
 
 ![Image](Images/projectlife.png)
@@ -100,7 +103,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- The option to offer various different formats for pages is an interesting concept to explore. This allows for some individuality between entries and can have different pages formatted in a way which best reflects the user's day.
 
 <strong> Threats ⚠️ </strong>- As listed in the weaknesses, not being able to save progress makes losing work a high risk.
-
+***
 ### Existing Solution 5: Hiker's Logbook ###
 
 ![Image](Images/logbook.png)
@@ -116,7 +119,7 @@ User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hike
 <strong> Opportunities 🧭 </strong>- The minimalistic design and list display will be the ideal direction the UI will take. This will be explored further in low fidelity diagrams and in Figma prototypes further on in the journal. Each journal entry can have two sides like seen here, one with the trip data, mapping information, and photos with the other side of the entry being the reflection.
 
 <strong> Threats ⚠️ </strong>- Is a individualy made app and is not regulary supported.
-
+***
 ### Existing Solution 6: Remerkable Paper Pro ###
 
 ![Image](Images/remarkable.gif)
@@ -133,4 +136,10 @@ Another relevant concept is nature journaling as seen in this video
 
 [https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary](https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary)
 
-The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text.
+The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text. These 6 existing services and products explored displayed functions from differing apps with unique use cases and as identified, this task is aiming to utalise some of the core functionality seens across these examples to build an app which satisfies the task goal of connecting with the outdoors, traveling, and self reflection through an engaging and customisable journal application while employing geolocation API's to be accuretly context-aware. Inspiration to achieve this goal can be visualised further in the Venn diagram below
+
+![Image](Images/venn.png)
+
+***
+## 1.3	Research and Evaluation of Existing Solutions ##
+06/10/2024

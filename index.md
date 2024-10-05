@@ -113,6 +113,8 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ### Existing Solution 6: Remerkable Paper Pro ###
 
+![Image](Images/remarkable.gif)
+
 <strong> Strengths ✅ </strong>- Digitizes the paper journaling experience without loosing the authentic feel of writting on paper. The lightweight, colourful, E Ink tablet with local encryption and cross platform capability allows for a quality built smart device to journal notes in but without the distractions of everyday smartphones. Paper like feel is achieved through a textured surface to enhance the journaling experience on the go. Is designed solely for writing which allows for an unmatched journaling experience. A pen to write along with shapes and unlimited media support allows for endless customisation in journal entries.
 
 <strong> Weaknesses ❌ </strong>- High price barrier unlike the previous existing solutions. Ability to back up documents is another seperate subscription. Fragile device would not be ideal for the rougher, outdoor activities which this tasks intends to journal.

@@ -79,23 +79,25 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ### Existing Solution 3: Apple Journals ###
 
-<strong> Strengths ✅ </strong>- 
+![Image](Images/appjournal.jpg)
 
-<strong> Weaknesses ❌ </strong>- 
+<strong> Strengths ✅ </strong>- Apple launched their official journal app December 2023. It is simplistic, clutter free and easiley understandable offering the fundamental features such as date, text, photos, point location, voice over and music. This closely alligns with the concept of a scrapbook from the collage earlier. Saved entries are protected and made to be private to create an enviroment best for self-reflection.
 
-<strong> Opportunities 🧭 </strong>- 
+<strong> Weaknesses ❌ </strong>- Main weakness is that this is limited to users in Apple's ecosystem only which is limiting the reach of the application. The goal of this task to create a journal application to record your movement throughout the day which would require functionality from the previous two examples to be added with the concept of a journal seen here. This will be explored more in the DEFINE stage of the double diamond and later in SCAMPER.
 
-<strong> Threats ⚠️ </strong>- 
+<strong> Opportunities 🧭 </strong>- Incorprating the feature to sort and filter entries as seen in Apple Journals will add interactiveness and reduce clutter in the proposed project. Daily notifications to enter in the journal could be an option provided but by default would need to be disabled to adhere to the task's theme of disconnection.
+
+<strong> Threats ⚠️ </strong>- Unlike the other solutions, this application is highly secure making the only real risk of backing up data to prevant data loss.
 
 ### Existing Solution 4: Project Life ###
 
-<strong> Strengths ✅ </strong>- 
+<strong> Strengths ✅ </strong>- Project Life is a completely free app from Becky Higgins made to create digital scrapbooks easiley and is used as a teaching tool in primary school education. Offers an easy to use tool to journal in the form of visual imagery. App is intended to easily export digital scrapbooks and journals in a physical format, creating an egaging experience for the users.
 
-<strong> Weaknesses ❌ </strong>- 
+<strong> Weaknesses ❌ </strong>- Cannot save work to come back to later and does not offer much flexibility when it comes to what is able to be inserted into the scrapbook or journal. Offers a tool rather than an experience which in the case of this project does not satisfy the task goal. What is normaly basic functionality such as font selection are blocked by a pay barrier.
 
-<strong> Opportunities 🧭 </strong>- 
+<strong> Opportunities 🧭 </strong>- The option to offer various different formats for pages is an interesting concept to explore. This allows for some individuality between entries and can have different pages formatted in a way which best reflects the user's day.
 
-<strong> Threats ⚠️ </strong>- 
+<strong> Threats ⚠️ </strong>- As listed in the weaknesses, not being able to save progress makes losing work a high risk.
 
 ### Existing Solution 5: Hiker's Logbook ###
 

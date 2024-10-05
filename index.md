@@ -67,6 +67,8 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 ### Existing Solution 2: Strava ###
 
+![Image](Images/strava.png)
+
 ### Existing Solution 3: Apple Journals ###
 
 ### Existing Solution 4: Project Life ###

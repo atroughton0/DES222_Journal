@@ -172,3 +172,7 @@ Conceptually combines the core functionaliy from the reviewed existing solutions
 <strong>Cons</strong>
 
 In contrast to the benifits seen in the lightweight nature of the Hiker's Logbook application, this apps wide range of tracking and functionality may pose a threat of being overly complex and may go against the goal of achieving minimalism, preserving the authenic feel of journaling and spending less time on technology. Alot of consideration must be put on designing the user interface to not overwhelm and stress the user with special focus to human, cultural, and social factors.
+
+![Image](Images/coneptOne.png)
+
+This low fidelity GUI prototype made in Pencil displays what the home screen of the Trek application could envision to adhere to the goal of being minimal.

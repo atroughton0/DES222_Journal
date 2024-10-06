@@ -177,6 +177,7 @@ In contrast to the benifits seen in the lightweight nature of the Hiker's Logboo
 
 This low fidelity GUI prototype made in Pencil displays what the home screen of the Trek application could envision to adhere to the goal of being minimal.
 
+***
 ### Realisation 2: Hue - A Mood Tracker using Microbits ###
 
 This potential project direction utalises Micro:bit hardware with an application to capture and visualise the user's mood throughout their daily journey. This could be achieved by using the broad range of Micro:bit's capatible sensors of accelerometers, light sensors, and buttons to detect environmental changes, and manual input such as mood level. This idea branches away from the geolocation concept to focus on how other forms of being context-aware can be incorprated in this task. Acts as an emotional journal with the microbit asking how was the day on the LED screen and results with the user selecting a responce e.g., happy, sad, excited. The app communicates with the Micro:bit and allows the user to  journal that day in greater detail and add further context to what the Micro:bit has collected. This application also stores and lets the user revisit previous entries.
@@ -188,3 +189,10 @@ Interactive physical product to creating an engaging and simple platform for sel
 <strong>Cons</strong>
 
 Is overly simplified and offers less function in comparision to the other solutions. The form factor of a Micro:bit and loose parts may be an issue to travel with and will need further design put on casing. Hard to journal in detail on the go with the limited input options of a Micro:bit. Relies on battery life. Offers alot less flexibility than a software based solution such as seen in realisation 1.
+
+![Image](Images/microbit.png)
+
+The above Micro:bit block code is a draft of how hardware can be used to journal emotion. The above lets the user select an input ranging from 1-5 on how they are feeling. This displays the core idea behind this realisation and would need to be extended to word with different sensors and implement communication with an application to properly document journal entries in order to achieve the task goal.
+
+***
+### Realisation 3: Quests - Making Journaling into a Game ###

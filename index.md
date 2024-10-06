@@ -208,3 +208,32 @@ Increased engagement and habit formation through daily quests to encourage journ
 <strong>Cons</strong>
 
 Users may become overly focused on earning rewards rather than the intrinsic value of journaling and self-reflection which takes away from the purpose of which this task is trying to achieve to offer an app/enviroment for genuine reflection and an authentic journaling experience. A game like experience may not be effective for all users with some users  finding it as a distracting or demotivating form of journaling. A personalised experience is a critical feature, but is also complex to design and create in comparison to the other realisations.
+
+![Image](Images/game.png)
+
+The UI designed in Pencil shows the home page with buttons to direct the user to the various functions that the application offers. This includes logging history, a map view, journaling streak, account level and daily quest information. This proposal combines journaling with the experience of a game to offer a new form to journaling.
+
+***
+
+### Realisation Findings ###
+The three realisations formed reveal a unique and interesting way in responce to the task project designing a location-based diary application. These solutions will be evaluated against the tasks goal, rationale and purpose as well as through the consideration of human, and social aspections to see how user's are effected and with further review into the complexity and effectiveness of the application to see if it suits the time constraints of this project.
+
+<strong>Reminder Checklist</strong>
+
+<ins>Purpose</ins>- To create a context-aware web application that enhances user experience through responsiveness and innovation.
+
+<ins>Rationale</ins>- To support a healthier relationship with technology in everyday life. This involves promoting digital wellbeing, mindfulness, and moment awareness through the app's design and functionality. The app should encourage users to connect with their surroundings and reflect on their experiences
+
+<ins>Goal</ins>- To develop a responsive application that allows users to record and reflect on their experiences in a meaningful way.
+
+• Location tracking and mapping
+
+• Context-awareness
+
+• Responsive and accessible on a wide range of devices
+
+• Journal entries with text, images, and timestamps
+    
+• Timeline view of entries
+
+<strong><ins>Realisation 1 of the 'Trek' application is selected</ins></strong> as the most appropriate for to be continued throughout this projects design process due to the idea being the best at balancing all the features requested and best suits the mid point of the Venn diagram from earlier. The combination and support of multiple media formats would allow Trek to be best at satisfying the core requirement needs stated in the goals list above. The minimalistic UI proposed in the low fidelity GUI aims to fulfill the goal of a lightweight and understandable aesthetic to promote physical exploration and journaling to promote improved well-being. This user interface complements the user experience to create a design which is centred around the human user wants and needs of the user of creating a space for self-reflection while preserving the authentic journal and scrapbook experience which is highly benefical to the user. Trek pleases social and cultural factors through mindfull engagement with technology to effectively connect with the real world in the trend of digital detox while catering to the human need for belonging and connection with private entries to look back on.

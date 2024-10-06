@@ -175,6 +175,8 @@ Conceptually combines the core functionaliy from the reviewed existing solutions
 
 In contrast to the benifits seen in the lightweight nature of the Hiker's Logbook application, this apps wide range of tracking and functionality may pose a threat of being overly complex and may go against the goal of achieving minimalism, preserving the authenic feel of journaling and spending less time on technology. Alot of consideration must be put on designing the user interface to not overwhelm and stress the user with special focus to human, cultural, and social factors.
 
+#### Trek Home Page GUI ####
+
 ![Image](Images/coneptOne.png)
 
 This low fidelity GUI prototype made in Pencil displays what the home screen of the Trek application could envision to adhere to the goal of being minimal.
@@ -192,6 +194,8 @@ Interactive physical product to creating an engaging and simple platform for sel
 
 Is overly simplified and offers less function in comparision to the other solutions. The form factor of a Micro:bit and loose parts may be an issue to travel with and will need further design put on casing. Hard to journal in detail on the go with the limited input options of a Micro:bit. Relies on battery life. Offers alot less flexibility than a software based solution such as seen in realisation 1.
 
+#### Microbit Foundation Block Code ####
+
 ![Image](Images/microbit.png)
 
 The above Micro:bit block code is a draft of how hardware can be used to journal emotion. The above lets the user select an input ranging from 1-5 on how they are feeling. This displays the core idea behind this realisation and would need to be extended to word with different sensors and implement communication with an application to properly document journal entries in order to achieve the task goal.
@@ -208,6 +212,8 @@ Increased engagement and habit formation through daily quests to encourage journ
 <strong>Cons</strong>
 
 Users may become overly focused on earning rewards rather than the intrinsic value of journaling and self-reflection which takes away from the purpose of which this task is trying to achieve to offer an app/enviroment for genuine reflection and an authentic journaling experience. A game like experience may not be effective for all users with some users  finding it as a distracting or demotivating form of journaling. A personalised experience is a critical feature, but is also complex to design and create in comparison to the other realisations.
+
+#### Quest Low Fidelity Home Page ####
 
 ![Image](Images/game.png)
 
@@ -240,3 +246,13 @@ The three realisations formed reveal a unique and interesting way in responce to
 
 ***
 ## 1.5	Development of Selected Concept ##
+
+The Trek application will be further developed in accordance with the double diamond model. The end of section 1.4 clearly defined what is expected and will be used as the criteria for effectiveness throughout the development stage going forward. 
+
+Although this application is designed to be a cross platform service, the inital test versions from this development will be made as a web app with HTML, CSS, and JavaScript to test the concept before designing specialy for various platforms. Feedback from prior tasks will be utalised in the development later on, suggesting to use CSS Grids and flex boxes to achieve responsiveness in adjusting to varying screen sizes. The core functionality and application concept were planned on the sitemap below to draft how the pages will link with one another.
+
+#### Sitemap ####
+
+![Image](Images/sitemap.png)
+
+The web application is designed with hierarchy as the various core functionalities branch from the central home page which can quickly access all areas of the application. Research from the existing application Strava determined that the Mapbox API is best suited for geolocation features in this task which will support additional input from the universal RESTful and media capture APIs. The home page would have summaries from the main features, as inspired from the UI in realisation 1, with links to a calander to view all entries through either a calander or list view. Additional features that can be present here is being able to group, filter or search through entries. The map page displays the interactive map from Mapbox and is used to plan out journeys. The log page is the central function which lets the user input text and start recording there day. The Google Timelines feature inspires another possible which would be to automaticaly record the day in the background and then the log page is used to add context to this information and sort the day as a detailed timeline. These pages will now be drafted on Figma to test the aesthetic choices of the user interface as well as responsiveness and feature implementation in greater detail from the low fidelity GUIs.

@@ -165,6 +165,8 @@ This application is inspired by the geolocation and time based activity tracking
 
 • View travel history through an egaging and minimalistic interface
 
+• Creation of context awareness through the usage of the MapBoxes API and Media Capture API
+
 <strong>Pros</strong>
 
 Conceptually combines the core functionaliy from the reviewed existing solutions to achieve the goal seen in the Venn diagram. Displaying daily events paired with an interactive map to show the days events in chronological order allow for a rich and immersive form or journaling unseen in traditional forms. The extensive amount of information avaliable to the user allows for deeper contextualisation by linking location to time to gain an understanding of how their environment and activities can influence their thoughts and feelings.
@@ -196,3 +198,13 @@ The above Micro:bit block code is a draft of how hardware can be used to journal
 
 ***
 ### Realisation 3: Quests - Making Journaling into a Game ###
+
+This third idea is exploring the engagement aspect saught after in this project. This would be an application which turns journaling into a game by rewarding the user when journaling. This is done through random daily quests which are given to the user such as 'walk 1km' or 'journal for 3 straight days' to unlock achievements. Data collected while journaling can provide useful insights into the user's well-being and lifestyle patterns to generate personalised recommendations for further exploration or self-improvement. This aims to satisfy the task rationale of encouraging users to explore the outdoors to improve wellbeing with the assistance of this application.
+
+<strong>Pros</strong>
+
+Increased engagement and habit formation through daily quests to encourage journaling. Implements motivation and goal setting for long term goals set by either the user or application. App can provide a personalised experience based on user input and user activity. Encourages exploration of outdoors and physical activity through a simple user interface while providing back a sense of accomplishment.
+
+<strong>Cons</strong>
+
+Users may become overly focused on earning rewards rather than the intrinsic value of journaling and self-reflection which takes away from the purpose of which this task is trying to achieve to offer an app/enviroment for genuine reflection and an authentic journaling experience. A game like experience may not be effective for all users with some users  finding it as a distracting or demotivating form of journaling. A personalised experience is a critical feature, but is also complex to design and create in comparison to the other realisations.

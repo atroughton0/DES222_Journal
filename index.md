@@ -150,3 +150,25 @@ The goal of this task is to provide the ability to journal a wide range differen
 06/10/2024
 
 Reviewing and evaluating existing solutions allowed for the task to define what is expected to be seen in the early concepts and final development. To further advance in the define stage of the double diamond and more towards to development of the application, three revisions and applicaiton diagrams will be produced to see how effective the proposed solutions are at achieving the task goal.
+
+### Realisation 1: Trek - A Journey Tracker Journal Application ###
+
+This application is inspired by the geolocation and time based activity tracking seen in the Google timelines features and Strava app but would be dedicated for journaling and self-reflection. The goal here is to create a digital journal that captures not just thoughts and feelings but also the context of where and when those experiences occurred. This allows users to revisit their memories in a more immersive and meaningful way. This mode would allow users to not only log individual entries but also create continuous, chronological records of their journeys through an interactive map that displays the user's route with markers for each journal entry. The name 'Trek' was chosen as it means to perform a long and sometimes difficult journey which reflects what this app is trying to capture through jounal entries.
+
+<strong>Features include</strong>
+
+• The ability to add photos, notes, and even short audio recordings to each point on the timeline.
+
+• Timeline view that allows users to scroll through their journey chronologically, with entries displayed alongside the map.
+
+• Group and filter entries
+
+• View travel history through an egaging and minimalistic interface
+
+<strong>Pros</strong>
+
+Conceptually combines the core functionaliy from the reviewed existing solutions to achieve the goal seen in the Venn diagram. Displaying daily events paired with an interactive map to show the days events in chronological order allow for a rich and immersive form or journaling unseen in traditional forms. The extensive amount of information avaliable to the user allows for deeper contextualisation by linking location to time to gain an understanding of how their environment and activities can influence their thoughts and feelings.
+
+<strong>Cons</strong>
+
+In contrast to the benifits seen in the lightweight nature of the Hiker's Logbook application, this apps wide range of tracking and functionality may pose a threat of being overly complex and may go against the goal of achieving minimalism, preserving the authenic feel of journaling and spending less time on technology. Alot of consideration must be put on designing the user interface to not overwhelm and stress the user with special focus to human, cultural, and social factors.

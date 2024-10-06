@@ -135,6 +135,7 @@ User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hike
 Another relevant concept is nature journaling as seen in this video
 
 [https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary](https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary)
+
 The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text. These 6 existing services and products explored displayed functions from differing apps with unique use cases and as identified, this task is aiming to utalise some of the core functionality seens across these examples to build an app which satisfies the task goal of connecting with the outdoors, traveling, and self reflection through an engaging and customisable journal application while employing geolocation API's to be accuretly context-aware. Inspiration to achieve this goal can be visualised further in the Venn diagram below
 
 ![Image](Images/venn.png)

@@ -24,7 +24,7 @@
 ## 1.1 Task and Journal Statements ##
 <ins> Predetermined Goal:</ins> Create a context aware web application to enhance user experience through responsiveness and innovation 
 
-The task prescribed is to design and develop a responsive project. The following journal will display how ideas and concepts evolve from the the predetermined goal and through evalutation of existing projects contribute to the creation of the final design.
+The task prescribed is to design and develop a responsive project. The following journal will display how ideas and concepts evolve from the predetermined goal and through evaluation of existing projects contribute to the creation of the final design.
 
 ***
 ## 1.2 Determining Design Purpose ##
@@ -50,7 +50,7 @@ A concept proposal posted of Padlet was created from this rationale as well as a
 
 03/10/2024
 
-With the rationale and core concepts defined prior in section 1.2 of this journal, it sets up criteria to evaluate existing solutions to identify strengths and weaknesses through SWAT analysis to contribute to the development of this project. The collage above visualises the brainstorming process powering the projects idea by merging certain features and functionality from various applications such as timeline tracking, and adding interactive media with the goal of creating a digital journal to authenticaly preserve how someone felt about a certain day or journey. The collage incorprating varing solutions offers a mixture of different means of usage, target audiences, and functionality which highlights why the SCAMPER ideology will be effective when utalising these numerous existing applications and other relevant hardware examples.
+With the rationale and core concepts defined prior in section 1.2 of this journal, it sets up criteria to evaluate existing solutions to identify strengths and weaknesses through SWAT analysis to contribute to the development of this project. The collage above visualises the brainstorming process powering the projects idea by merging certain features and functionality from various applications such as timeline tracking, and adding interactive media with the goal of creating a digital journal to authentically preserve how someone felt about a certain day or journey. The collage incorporating varying solutions offers a mixture of different means of usage, target audiences, and functionality which highlights why the SCAMPER ideology will be effective when utilising these numerous existing applications and other relevant hardware examples.
 
 ### Existing Solution 1: Google Timelines ###
 
@@ -62,46 +62,46 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 
 <strong> Strengths ✅ </strong>- Google Maps is a free service only requiring a Google account. Great accuracy for road trips with GPS tracking and easily integrates with other Google services such as Google Photos. Application offers wide range of functionality.
 
-<strong> Weaknesses ❌ </strong>- Google recently rolled out an update which ended support for Google Timelines online and now only stores information locally for security concerns. This change eliminated cross functionality across devices and made recorded statistics and travel journeys inacurate. Another weakness here in responce to the tasks design purpose is that this apps features are not dedicated towards the intended audience which this task is aiming for which creates an opportunity to design an app with this focus.
+<strong> Weaknesses ❌ </strong>- Google recently rolled out an update which ended support for Google Timelines online and now only stores information locally for security concerns. This change eliminated cross functionality across devices and made recorded statistics and travel journeys inaccurate. Another weakness here in response to the tasks design purpose is that this apps features are not dedicated towards the intended audience which this task is aiming for which creates an opportunity to design an app with this focus.
 
-<strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activies recorded in the journal.
+<strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activities recorded in the journal.
 
-<strong> Threats ⚠️ </strong>- An inherent threat which would be consistant amoung all these solutions is recording of sensitive data regarding the users location and daily activities which must be protected when sent and stored. An option for local storage only could be provided to users.
+<strong> Threats ⚠️ </strong>- An inherent threat which would be consistent among all these solutions is recording of sensitive data regarding the users location and daily activities which must be protected when sent and stored. An option for local storage only could be provided to users.
 
 ***
 ### Existing Solution 2: Strava ###
 
 ![Image](Images/strava.png)
 
-<strong> Strengths ✅ </strong>- Strava is the premier app when it comes to recording and tracking any outdoor based activity whether it be biking, walking, kayaking, swimming, skiing, it records all data and offers the millions of users insights into their performance and hobby activities. Satellite geotracking to work even in the most remote places. Avaliable on all platforms and works across devices. Generates routes and activies for you. Works with many popular accessories and health apps. Customisable map interface using mapbox API. Free app to install and use with premium plans avaliable. Can join clubs and compete in challenges.
+<strong> Strengths ✅ </strong>- Strava is the premier app when it comes to recording and tracking any outdoor based activity whether it be biking, walking, kayaking, swimming, skiing, it records all data and offers the millions of users insights into their performance and hobby activities. Satellite geolocation tracking to work even in the most remote places. Is available on all platforms and syncs across devices. Generates routes and activities for you. Works with many popular accessories and health apps. Customisable map interface using Mapbox API. Free app to install and use with premium plans available. Can join clubs and compete in challenges.
 
-<strong> Weaknesses ❌ </strong>- Only in the context of this task is it a weakness but Strava acts as more of a social media platform where you share your trips with others and can compare performances and times with one another. In this projects use case of a private journal for self reflection, the concept of this apps functionalities will be utalised but with an app centred around single user without the social aspect which leads to the opportunities.
+<strong> Weaknesses ❌ </strong>- Only in the context of this task is it a weakness but Strava acts as more of a social media platform where you share your trips with others and can compare performances and times with one another. In this projects use case of a private journal for self reflection, the concept of this apps functionalities will be utilised but with an app centred around single user without the social aspect which leads to the opportunities.
 
-<strong> Opportunities 🧭 </strong>- In comparison to the Google Maps API from the prior example, the mapbox API is much more accessible while offering a wide range of map customisation on a free plan with a 50,000 request limits which will work for this task. Incorprating a feature to link images to a certain time and location period to achieve the goal of being context aware and responsive.
+<strong> Opportunities 🧭 </strong>- In comparison to the Google Maps API from the prior example, the Mapbox API is much more accessible while offering a wide range of map customisation on a free plan with a 50,000 request limits which will work for this task. Incorporating a feature to link images to a certain time and location period to achieve the goal of being context aware and responsive.
 
-<strong> Threats ⚠️ </strong>- Account security. If the project is aimed to work across devices, data must be managed securley and appropriately.
+<strong> Threats ⚠️ </strong>- Account security. If the project is aimed to work across devices, data must be managed securely and appropriately.
 
 ***
 ### Existing Solution 3: Apple Journals ###
 
 ![Image](Images/appjournal.jpg)
 
-<strong> Strengths ✅ </strong>- Apple launched their official journal app December 2023. It is simplistic, clutter free and easiley understandable offering the fundamental features such as date, text, photos, point location, voice over and music. This closely alligns with the concept of a scrapbook from the collage earlier. Saved entries are protected and made to be private to create an enviroment best for self-reflection.
+<strong> Strengths ✅ </strong>- Apple launched their official journal app December 2023. It is simplistic, clutter free and easily understandable offering the fundamental features such as date, text, photos, point location, voice over and music. This closely aligns with the concept of a scrapbook from the collage earlier. Saved entries are protected and made to be private to create an environment best for self-reflection.
 
 <strong> Weaknesses ❌ </strong>- Main weakness is that this is limited to users in Apple's ecosystem only which is limiting the reach of the application. The goal of this task to create a journal application to record your movement throughout the day which would require functionality from the previous two examples to be added with the concept of a journal seen here. This will be explored more in the DEFINE stage of the double diamond and later in SCAMPER.
 
-<strong> Opportunities 🧭 </strong>- Incorprating the feature to sort and filter entries as seen in Apple Journals will add interactiveness and reduce clutter in the proposed project. Daily notifications to enter in the journal could be an option provided but by default would need to be disabled to adhere to the task's theme of disconnection.
+<strong> Opportunities 🧭 </strong>- Incorporating the feature to sort and filter entries as seen in Apple Journals will add interactiveness and reduce clutter in the proposed project. Daily notifications to enter in the journal could be an option provided but by default would need to be disabled to adhere to the task's theme of disconnection.
 
-<strong> Threats ⚠️ </strong>- Unlike the other solutions, this application is highly secure making the only real risk of backing up data to prevant data loss.
+<strong> Threats ⚠️ </strong>- Unlike the other solutions, this application is highly secure making the only real risk of backing up data to prevent data loss.
 
 ***
 ### Existing Solution 4: Project Life ###
 
 ![Image](Images/projectlife.png)
 
-<strong> Strengths ✅ </strong>- Project Life is a completely free app from Becky Higgins made to create digital scrapbooks easiley and is used as a teaching tool in primary school education. Offers an easy to use tool to journal in the form of visual imagery. App is intended to easily export digital scrapbooks and journals in a physical format, creating an egaging experience for the users.
+<strong> Strengths ✅ </strong>- Project Life is a completely free app from Becky Higgins made to create digital scrapbooks easily and is used as a teaching tool in primary school education. Offers an easy to use tool to journal in the form of visual imagery. App is intended to easily export digital scrapbooks and journals in a physical format, creating an engaging experience for the users.
 
-<strong> Weaknesses ❌ </strong>- Cannot save work to come back to later and does not offer much flexibility when it comes to what is able to be inserted into the scrapbook or journal. Offers a tool rather than an experience which in the case of this project does not satisfy the task goal. What is normaly basic functionality such as font selection are blocked by a pay barrier.
+<strong> Weaknesses ❌ </strong>- Cannot save work to come back to later and does not offer much flexibility when it comes to what is able to be inserted into the scrapbook or journal. Offers a tool rather than an experience which in the case of this project does not satisfy the task goal. What is normally basic functionality such as font selection are blocked by a pay barrier.
 
 <strong> Opportunities 🧭 </strong>- The option to offer various different formats for pages is an interesting concept to explore. This allows for some individuality between entries and can have different pages formatted in a way which best reflects the user's day.
 
@@ -116,24 +116,24 @@ User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hike
 
 <em> "I wanted to keep a daily journal of my mileage, major events of the day, and where I slept just to create some anchors to allow me to remember the day in the future."</em>
 
-<strong> Strengths ✅ </strong>- This app was independently made by a hobbyist Aaron Byers non for profit to allow for an extremely light weight and easy to understand application which offers all statistics regarding hiking trips while offering the ability to take notes and journal each trip to look back on. This example is the closest at achieving the concept of journaling trips through location which is saught after in this task. Works offline without functionality loss. No account needed and is completely free to use.
+<strong> Strengths ✅ </strong>- This app was independently made by a hobbyist Aaron Byers non for profit to allow for an extremely light weight and easy to understand application which offers all statistics regarding hiking trips while offering the ability to take notes and journal each trip to look back on. This example is the closest at achieving the concept of journaling trips through location which is sought after in this task. Works offline without functionality loss. No account needed and is completely free to use.
 
-<strong> Weaknesses ❌ </strong>- Is only avaliable on iPhone devices which limits accessibility. This app is intended for hiking only but this must be expanded in the app being designed to support a wide range of hobbys. Uses manual input coordinates which is good for completely offline usage but a map API like mapbox will need to be used in the tasks revisions.
+<strong> Weaknesses ❌ </strong>- Is only available on iPhone devices which limits accessibility. This app is intended for hiking only but this must be expanded in the app being designed to support a wide range of hobbies. Uses manual input coordinates which is good for completely offline usage but a map API like Mapbox will need to be used in the tasks revisions.
 
 <strong> Opportunities 🧭 </strong>- The minimalistic design and list display will be the ideal direction the UI will take. This will be explored further in low fidelity diagrams and in Figma prototypes further on in the journal. Each journal entry can have two sides like seen here, one with the trip data, mapping information, and photos with the other side of the entry being the reflection.
 
-<strong> Threats ⚠️ </strong>- Is a individualy made app and is not regulary supported.
+<strong> Threats ⚠️ </strong>- Is a individually made app and is not regularly supported.
 
 ***
 ### Existing Solution 6: Remerkable Paper Pro ###
 
 ![Image](Images/remarkable.gif)
 
-<strong> Strengths ✅ </strong>- Digitizes the paper journaling experience without loosing the authentic feel of writting on paper. The lightweight, colourful, E Ink tablet with local encryption and cross platform capability allows for a quality built smart device to journal notes in but without the distractions of everyday smartphones. Paper like feel is achieved through a textured surface to enhance the journaling experience on the go. Is designed solely for writing which allows for an unmatched journaling experience. A pen to write along with shapes and unlimited media support allows for endless customisation in journal entries.
+<strong> Strengths ✅ </strong>- Digitises the paper journaling experience without loosing the authentic feel of writing on paper. The lightweight, colourful, E Ink tablet with local encryption and cross platform capability allows for a quality built smart device to journal notes in but without the distractions of everyday smartphones. Paper like feel is achieved through a textured surface to enhance the journaling experience on the go. Is designed solely for writing which allows for an unmatched journaling experience. A pen to write along with shapes and unlimited media support allows for endless customisation in journal entries.
 
 <strong> Weaknesses ❌ </strong>- High price barrier unlike the previous existing solutions. Ability to back up documents is another seperate subscription. Fragile device would not be ideal for the rougher, outdoor activities which this tasks intends to journal.
 
-<strong> Opportunities 🧭 </strong>- The other solutions looks at a service/application approach to the task goal but this offers a look into how hardware can be utalised for the same goal. As determined early in this tasks' journal, context aware software such as strava and timelines would most likely be the approach taken, but dedicated hardware to expand of the softwares impact towards the task rationale can be designed in future advancements of this idea.
+<strong> Opportunities 🧭 </strong>- The other solutions looks at a service/application approach to the task goal but this offers a look into how hardware can be utilised for the same goal. As determined early in this tasks' journal, context aware software such as strava and timelines would most likely be the approach taken, but dedicated hardware to expand of the softwares impact towards the task rationale can be designed in future advancements of this idea.
 
 <strong> Threats ⚠️ </strong>- Fragile and slim form factor makes the device easy to damage and misplace.
 
@@ -141,7 +141,7 @@ Another relevant concept is nature journaling as seen in this video
 
 [https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary](https://www.youtube.com/watch?v=o3pEY-qTBc8&ab_channel=Liberty%27sLibrary)
 
-The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text. These 6 existing services and products explored displayed functions from differing apps with unique use cases and as identified, this task is aiming to utalise some of the core functionality seens across these examples to build an app which satisfies the task goal of connecting with the outdoors, traveling, and self reflection through an engaging and customisable journal application while employing geolocation API's to be accuretly context-aware. Inspiration to achieve this goal can be visualised further in the Venn diagram below
+The goal of this task is to provide the ability to journal a wide range different input such as plain text, images, and geolocation to allow for the user to create a journal in a way which allows them to best reflect what is being journaled and support any emotion and meaning behind the text. These 6 existing services and products explored displayed functions from differing apps with unique use cases and as identified, this task is aiming to utilise some of the core functionality seen across these examples to build an app which satisfies the task goal of connecting with the outdoors, traveling, and self reflection through an engaging and customisable journal application while employing geolocation API's to be accurately context-aware. Inspiration to achieve this goal can be visualised further in the Venn diagram below
 
 ![Image](Images/venn.png)
 
@@ -149,11 +149,11 @@ The goal of this task is to provide the ability to journal a wide range differen
 ## 1.4	Early Concepts ##
 06/10/2024
 
-Reviewing and evaluating existing solutions allowed for the task to define what is expected to be seen in the early concepts and final development. To further advance in the define stage of the double diamond and more towards to development of the application, three revisions and applicaiton diagrams will be produced to see how effective the proposed solutions are at achieving the task goal.
+Reviewing and evaluating existing solutions allowed for the task to define what is expected to be seen in the early concepts and final development. To further advance in the define stage of the double diamond and more towards to development of the application, three revisions and application diagrams will be produced to see how effective the proposed solutions are at achieving the task goal.
 
 ### Realisation 1: Trek - A Journey Tracker Journal Application ###
 
-This application is inspired by the geolocation and time based activity tracking seen in the Google timelines features and Strava app but would be dedicated for journaling and self-reflection. The goal here is to create a digital journal that captures not just thoughts and feelings but also the context of where and when those experiences occurred. This allows users to revisit their memories in a more immersive and meaningful way. This mode would allow users to not only log individual entries but also create continuous, chronological records of their journeys through an interactive map that displays the user's route with markers for each journal entry. The name 'Trek' was chosen as it means to perform a long and sometimes difficult journey which reflects what this app is trying to capture through jounal entries.
+This application is inspired by the geolocation and time based activity tracking seen in the Google timelines features and Strava app but would be dedicated for journaling and self-reflection. The goal here is to create a digital journal that captures not just thoughts and feelings but also the context of where and when those experiences occurred. This allows users to revisit their memories in a more immersive and meaningful way. This mode would allow users to not only log individual entries but also create continuous, chronological records of their journeys through an interactive map that displays the user's route with markers for each journal entry. The name 'Trek' was chosen as it means to perform a long and sometimes difficult journey which reflects what this app is trying to capture through journal entries.
 
 <strong>Features include</strong>
 
@@ -163,17 +163,17 @@ This application is inspired by the geolocation and time based activity tracking
 
 • Group and filter entries
 
-• View travel history through an egaging and minimalistic interface
+• View travel history through an engaging and minimalistic interface
 
 • Creation of context awareness through the usage of the MapBoxes API and Media Capture API
 
 <strong>Pros</strong>
 
-Conceptually combines the core functionaliy from the reviewed existing solutions to achieve the goal seen in the Venn diagram. Displaying daily events paired with an interactive map to show the days events in chronological order allow for a rich and immersive form or journaling unseen in traditional forms. The extensive amount of information avaliable to the user allows for deeper contextualisation by linking location to time to gain an understanding of how their environment and activities can influence their thoughts and feelings.
+Conceptually combines the core functionality from the reviewed existing solutions to achieve the goal seen in the Venn diagram. Displaying daily events paired with an interactive map to show the days events in chronological order allow for a rich and immersive form or journaling unseen in traditional forms. The extensive amount of information available to the user allows for deeper contextualisation by linking location to time to gain an understanding of how their environment and activities can influence their thoughts and feelings.
 
 <strong>Cons</strong>
 
-In contrast to the benifits seen in the lightweight nature of the Hiker's Logbook application, this apps wide range of tracking and functionality may pose a threat of being overly complex and may go against the goal of achieving minimalism, preserving the authenic feel of journaling and spending less time on technology. Alot of consideration must be put on designing the user interface to not overwhelm and stress the user with special focus to human, cultural, and social factors.
+In contrast to the benefits seen in the lightweight nature of the Hiker's Logbook application, this apps wide range of tracking and functionality may pose a threat of being overly complex and may go against the goal of achieving minimalism, preserving the authentic feel of journaling and spending less time on technology. A lot of consideration must be put on designing the user interface to not overwhelm and stress the user with special focus to human, cultural, and social factors.
 
 #### Trek Home Page GUI ####
 
@@ -184,7 +184,7 @@ This low fidelity GUI prototype made in Pencil displays what the home screen of 
 ***
 ### Realisation 2: Hue - A Mood Tracker using Microbits ###
 
-This potential project direction utalises Micro:bit hardware with an application to capture and visualise the user's mood throughout their daily journey. This could be achieved by using the broad range of Micro:bit's capatible sensors of accelerometers, light sensors, and buttons to detect environmental changes, and manual input such as mood level. This idea branches away from the geolocation concept to focus on how other forms of being context-aware can be incorprated in this task. Acts as an emotional journal with the microbit asking how was the day on the LED screen and results with the user selecting a responce e.g., happy, sad, excited. The app communicates with the Micro:bit and allows the user to  journal that day in greater detail and add further context to what the Micro:bit has collected. This application also stores and lets the user revisit previous entries.
+This potential project direction utilises Micro:bit hardware with an application to capture and visualise the user's mood throughout their daily journey. This could be achieved by using the broad range of Micro:bit's compatible sensors of accelerometers, light sensors, and buttons to detect environmental changes, and manual input such as mood level. This idea branches away from the geolocation concept to focus on how other forms of being context-aware can be incorporated in this task. Acts as an emotional journal with the Micro:bit asking how was the day on the LED screen and results with the user selecting a response e.g., happy, sad, excited. The app communicates with the Micro:bit and allows the user to  journal that day in greater detail and add further context to what the Micro:bit has collected. This application also stores and lets the user revisit previous entries.
 
 <strong>Pros</strong>
 
@@ -192,7 +192,7 @@ Interactive physical product to creating an engaging and simple platform for sel
 
 <strong>Cons</strong>
 
-Is overly simplified and offers less function in comparision to the other solutions. The form factor of a Micro:bit and loose parts may be an issue to travel with and will need further design put on casing. Hard to journal in detail on the go with the limited input options of a Micro:bit. Relies on battery life. Offers alot less flexibility than a software based solution such as seen in realisation 1.
+Is overly simplified and offers less function in comparison to the other solutions. The form factor of a Micro:bit and loose parts may be an issue to travel with and will need further design put on casing. Hard to journal in detail on the go with the limited input options of a Micro:bit. Relies on battery life. Offers a lot less flexibility than a software based solution such as seen in realisation 1.
 
 #### Microbit Foundation Block Code ####
 
@@ -203,7 +203,7 @@ The above Micro:bit block code is a draft of how hardware can be used to journal
 ***
 ### Realisation 3: Quests - Making Journaling into a Game ###
 
-This third idea is exploring the engagement aspect saught after in this project. This would be an application which turns journaling into a game by rewarding the user when journaling. This is done through random daily quests which are given to the user such as 'walk 1km' or 'journal for 3 straight days' to unlock achievements. Data collected while journaling can provide useful insights into the user's well-being and lifestyle patterns to generate personalised recommendations for further exploration or self-improvement. This aims to satisfy the task rationale of encouraging users to explore the outdoors to improve wellbeing with the assistance of this application.
+This third idea is exploring the engagement aspect sought after in this project. This would be an application which turns journaling into a game by rewarding the user when journaling. This is done through random daily quests which are given to the user such as 'walk 1km' or 'journal for 3 straight days' to unlock achievements. Data collected while journaling can provide useful insights into the user's well-being and lifestyle patterns to generate personalised recommendations for further exploration or self-improvement. This aims to satisfy the task rationale of encouraging users to explore the outdoors to improve wellbeing with the assistance of this application.
 
 <strong>Pros</strong>
 
@@ -211,7 +211,7 @@ Increased engagement and habit formation through daily quests to encourage journ
 
 <strong>Cons</strong>
 
-Users may become overly focused on earning rewards rather than the intrinsic value of journaling and self-reflection which takes away from the purpose of which this task is trying to achieve to offer an app/enviroment for genuine reflection and an authentic journaling experience. A game like experience may not be effective for all users with some users  finding it as a distracting or demotivating form of journaling. A personalised experience is a critical feature, but is also complex to design and create in comparison to the other realisations.
+Users may become overly focused on earning rewards rather than the intrinsic value of journaling and self-reflection which takes away from the purpose of which this task is trying to achieve to offer an app/environment for genuine reflection and an authentic journaling experience. A game like experience may not be effective for all users with some users  finding it as a distracting or demotivating form of journaling. A personalised experience is a critical feature, but is also complex to design and create in comparison to the other realisations.
 
 #### Quest Low Fidelity Home Page ####
 
@@ -222,7 +222,7 @@ The UI designed in Pencil shows the home page with buttons to direct the user to
 ***
 
 ### Realisation Findings ###
-The three realisations formed reveal a unique and interesting way in responce to the task project designing a location-based diary application. These solutions will be evaluated against the tasks goal, rationale and purpose as well as through the consideration of human, and social aspections to see how user's are effected and with further review into the complexity and effectiveness of the application to see if it suits the time constraints of this project.
+The three realisations formed reveal a unique and interesting way in response to the task project designing a location-based diary application. These solutions will be evaluated against the tasks goal, rationale and purpose as well as through the consideration of human, and social aspects to see how user's are affected, and with further review into the complexity and effectiveness of the application to see if it suits the time constraints of this project.
 
 <strong>Reminder Checklist</strong>
 
@@ -242,17 +242,17 @@ The three realisations formed reveal a unique and interesting way in responce to
     
 • Timeline view of entries
 
-<strong><ins>Realisation 1 of the 'Trek' application is selected</ins></strong> as the most appropriate for to be continued throughout this projects design process due to the idea being the best at balancing all the features requested and best suits the mid point of the Venn diagram from earlier. The combination and support of multiple media formats would allow Trek to be best at satisfying the core requirement needs stated in the goals list above. The minimalistic UI proposed in the low fidelity GUI aims to fulfill the goal of a lightweight and understandable aesthetic to promote physical exploration and journaling to promote improved well-being. This user interface complements the user experience to create a design which is centred around the human user wants and needs of the user of creating a space for self-reflection while preserving the authentic journal and scrapbook experience which is highly benefical to the user. Trek pleases social and cultural factors through mindfull engagement with technology to effectively connect with the real world in the trend of digital detox while catering to the human need for belonging and connection with private entries to look back on.
+<strong><ins>Realisation 1 of the 'Trek' application is selected</ins></strong> as the most appropriate for to be continued throughout this projects design process due to the idea being the best at balancing all the features requested and best suits the mid point of the Venn diagram from earlier. The combination and support of multiple media formats would allow Trek to be best at satisfying the core requirement needs stated in the goals list above. The minimalistic UI proposed in the low fidelity GUI aims to fulfil the goal of a lightweight and understandable aesthetic to promote physical exploration and journaling to promote improved well-being. This user interface complements the user experience to create a design which is centred around the human user wants and needs of the user of creating a space for self-reflection while preserving the authentic journal and scrapbook experience which is highly beneficial to the user. Trek pleases social and cultural factors through mindful engagement with technology to effectively connect with the real world in the trend of digital detox while catering to the human need for belonging and connection with private entries to look back on.
 
 ***
 ## 1.5	Development of Selected Concept ##
 
 The Trek application will be further developed in accordance with the double diamond model. The end of section 1.4 clearly defined what is expected and will be used as the criteria for effectiveness throughout the development stage going forward. 
 
-Although this application is designed to be a cross platform service, the inital test versions from this development will be made as a web app with HTML, CSS, and JavaScript to test the concept before designing specialy for various platforms. Feedback from prior tasks will be utalised in the development later on, suggesting to use CSS Grids and flex boxes to achieve responsiveness in adjusting to varying screen sizes. The core functionality and application concept were planned on the sitemap below to draft how the pages will link with one another.
+Although this application is designed to be a cross platform service, the initial test versions from this development will be made as a web app with HTML, CSS, and JavaScript to test the concept before designing specially for various platforms. Feedback from prior tasks will be utilised in the development later on, suggesting to use CSS Grids and flex boxes to achieve responsiveness in adjusting to varying screen sizes. The core functionality and application concept were planned on the sitemap below to draft how the pages will link with one another.
 
 #### Sitemap ####
 
 ![Image](Images/sitemap.png)
 
-The web application is designed with hierarchy as the various core functionalities branch from the central home page which can quickly access all areas of the application. Research from the existing application Strava determined that the Mapbox API is best suited for geolocation features in this task which will support additional input from the universal RESTful and media capture APIs. The home page would have summaries from the main features, as inspired from the UI in realisation 1, with links to a calander to view all entries through either a calander or list view. Additional features that can be present here is being able to group, filter or search through entries. The map page displays the interactive map from Mapbox and is used to plan out journeys. The log page is the central function which lets the user input text and start recording there day. The Google Timelines feature inspires another possible which would be to automaticaly record the day in the background and then the log page is used to add context to this information and sort the day as a detailed timeline. These pages will now be drafted on Figma to test the aesthetic choices of the user interface as well as responsiveness and feature implementation in greater detail from the low fidelity GUIs.
+The web application is designed with hierarchy as the various core functionalities branch from the central home page which can quickly access all areas of the application. Research from the existing application Strava determined that the Mapbox API is best suited for geolocation features in this task which will support additional input from the universal RESTful and media capture APIs. The home page would have summaries from the main features, as inspired from the UI in realisation 1, with links to a calendar to view all entries through either a calendar or list view. Additional features that can be present here is being able to group, filter or search through entries. The map page displays the interactive map from Mapbox and is used to plan out journeys. The log page is the central function which lets the user input text and start recording their day. The Google Timelines feature inspires another possible which would be to automatically record the day in the background and then the log page is used to add context to this information and sort the day as a detailed timeline. These pages will now be drafted on Figma to test the aesthetic choices of the user interface as well as responsiveness and feature implementation in greater detail from the low fidelity GUIs.

@@ -15,7 +15,7 @@
 
 1.4	Early Concepts
 
-1.5	Final Design
+1.5	Development of Selected Concept
 
 ***
 # 1. Conceptualisation # 
@@ -237,3 +237,6 @@ The three realisations formed reveal a unique and interesting way in responce to
 • Timeline view of entries
 
 <strong><ins>Realisation 1 of the 'Trek' application is selected</ins></strong> as the most appropriate for to be continued throughout this projects design process due to the idea being the best at balancing all the features requested and best suits the mid point of the Venn diagram from earlier. The combination and support of multiple media formats would allow Trek to be best at satisfying the core requirement needs stated in the goals list above. The minimalistic UI proposed in the low fidelity GUI aims to fulfill the goal of a lightweight and understandable aesthetic to promote physical exploration and journaling to promote improved well-being. This user interface complements the user experience to create a design which is centred around the human user wants and needs of the user of creating a space for self-reflection while preserving the authentic journal and scrapbook experience which is highly benefical to the user. Trek pleases social and cultural factors through mindfull engagement with technology to effectively connect with the real world in the trend of digital detox while catering to the human need for belonging and connection with private entries to look back on.
+
+***
+## 1.5	Development of Selected Concept ##

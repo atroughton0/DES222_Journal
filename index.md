@@ -176,3 +176,15 @@ In contrast to the benifits seen in the lightweight nature of the Hiker's Logboo
 ![Image](Images/coneptOne.png)
 
 This low fidelity GUI prototype made in Pencil displays what the home screen of the Trek application could envision to adhere to the goal of being minimal.
+
+### Realisation 2: Hue - A Mood Tracker using Microbits ###
+
+This potential project direction utalises Micro:bit hardware with an application to capture and visualise the user's mood throughout their daily journey. This could be achieved by using the broad range of Micro:bit's capatible sensors of accelerometers, light sensors, and buttons to detect environmental changes, and manual input such as mood level. This idea branches away from the geolocation concept to focus on how other forms of being context-aware can be incorprated in this task. Acts as an emotional journal with the microbit asking how was the day on the LED screen and results with the user selecting a responce e.g., happy, sad, excited. The app communicates with the Micro:bit and allows the user to  journal that day in greater detail and add further context to what the Micro:bit has collected. This application also stores and lets the user revisit previous entries.
+
+<strong>Pros</strong>
+
+Interactive physical product to creating an engaging and simple platform for self reflection. Can make use of a wide range of sensors to add in the moment data to journal entries. Quick and easy action to journal with a press of a button which links back to the goal of disconnection.
+
+<strong>Cons</strong>
+
+Is overly simplified and offers less function in comparision to the other solutions. The form factor of a Micro:bit and loose parts may be an issue to travel with and will need further design put on casing. Hard to journal in detail on the go with the limited input options of a Micro:bit. Relies on battery life. Offers alot less flexibility than a software based solution such as seen in realisation 1.

@@ -16,8 +16,8 @@
 1.4	Early Concepts
 
 1.5	Final Design
-***
 
+***
 # 1. Conceptualisation # 
 
 02/10/2024
@@ -67,6 +67,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- Google does offer the API of their mapping services for third party use. A timeline like recording where a day entry for a journal is sorted by hour or in order can create a detailed journal entry and offer interactiveness to the user when expanded on. This project can offer grouped insights as seen in the image above to display a summary of activies recorded in the journal.
 
 <strong> Threats ⚠️ </strong>- An inherent threat which would be consistant amoung all these solutions is recording of sensitive data regarding the users location and daily activities which must be protected when sent and stored. An option for local storage only could be provided to users.
+
 ***
 ### Existing Solution 2: Strava ###
 
@@ -79,6 +80,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- In comparison to the Google Maps API from the prior example, the mapbox API is much more accessible while offering a wide range of map customisation on a free plan with a 50,000 request limits which will work for this task. Incorprating a feature to link images to a certain time and location period to achieve the goal of being context aware and responsive.
 
 <strong> Threats ⚠️ </strong>- Account security. If the project is aimed to work across devices, data must be managed securley and appropriately.
+
 ***
 ### Existing Solution 3: Apple Journals ###
 
@@ -91,6 +93,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- Incorprating the feature to sort and filter entries as seen in Apple Journals will add interactiveness and reduce clutter in the proposed project. Daily notifications to enter in the journal could be an option provided but by default would need to be disabled to adhere to the task's theme of disconnection.
 
 <strong> Threats ⚠️ </strong>- Unlike the other solutions, this application is highly secure making the only real risk of backing up data to prevant data loss.
+
 ***
 ### Existing Solution 4: Project Life ###
 
@@ -103,6 +106,7 @@ Google Timelines is a feature within the Google Maps mobile app and tracks the d
 <strong> Opportunities 🧭 </strong>- The option to offer various different formats for pages is an interesting concept to explore. This allows for some individuality between entries and can have different pages formatted in a way which best reflects the user's day.
 
 <strong> Threats ⚠️ </strong>- As listed in the weaknesses, not being able to save progress makes losing work a high risk.
+
 ***
 ### Existing Solution 5: Hiker's Logbook ###
 
@@ -119,6 +123,7 @@ User discussion [HERE](https://www.reddit.com/r/Ultralight/comments/118cmky/hike
 <strong> Opportunities 🧭 </strong>- The minimalistic design and list display will be the ideal direction the UI will take. This will be explored further in low fidelity diagrams and in Figma prototypes further on in the journal. Each journal entry can have two sides like seen here, one with the trip data, mapping information, and photos with the other side of the entry being the reflection.
 
 <strong> Threats ⚠️ </strong>- Is a individualy made app and is not regulary supported.
+
 ***
 ### Existing Solution 6: Remerkable Paper Pro ###
 

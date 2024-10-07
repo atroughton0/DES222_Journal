@@ -261,10 +261,10 @@ The web application is designed with hierarchy as the various core functionaliti
 
 ![Image](Images/figma.png)
 
-The design choices from the initial UI aesthetic were kept in the Figma design but how the grid will need to adjust to different screen sizes were planned here for responsiveness across tablets and phones. Here the goal of being both lightweight and informative are achieved and will be unchanged going forward. Although this visualises only what the home page will look like so another UI was designed regarding the logging page.
+The design choices from the initial UI aesthetic were kept in the Figma design but how the grid will need to adjust to different screen sizes were planned here for responsiveness across tablets and phones. Here the goal of being both lightweight and informative is achieved and will be unchanged going forward. Although this visualises only what the home page will look like so another UI was designed regarding the logging page.
 
 ![Image](Images/demo.gif)
 
-This HTML file displays an interactive timeline made with CSS and JavaScript connecting to events. The idea from earlier about having two sides to a journal entry of part scrapbook and part map were incorprated here. These flex boxes and shapes are for the moment place holder information. This page in future development requires functionality to POST and GET information through REST API to display and store the entries that the user inputs. 
+This HTML file displays an interactive timeline made with CSS and JavaScript connecting to events. The idea from earlier about having two sides to a journal entry of part scrapbook and part map were incorporated here. These flex boxes and shapes are for the moment place holder information. This page in future development requires functionality to POST and GET information through REST API to display and store the entries that the user inputs. 
 
 This idea will now be delivered as a presentation to gather feedback before the development of a fully programmed web application begins as the end of the define stage of the double diamond methodology nears.

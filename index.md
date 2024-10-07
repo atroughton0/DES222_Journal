@@ -256,3 +256,15 @@ Although this application is designed to be a cross platform service, the initia
 ![Image](Images/sitemap.png)
 
 The web application is designed with hierarchy as the various core functionalities branch from the central home page which can quickly access all areas of the application. Research from the existing application Strava determined that the Mapbox API is best suited for geolocation features in this task which will support additional input from the universal RESTful and media capture APIs. The home page would have summaries from the main features, as inspired from the UI in realisation 1, with links to a calendar to view all entries through either a calendar or list view. Additional features that can be present here is being able to group, filter or search through entries. The map page displays the interactive map from Mapbox and is used to plan out journeys. The log page is the central function which lets the user input text and start recording their day. The Google Timelines feature inspires another possible which would be to automatically record the day in the background and then the log page is used to add context to this information and sort the day as a detailed timeline. These pages will now be drafted on Figma to test the aesthetic choices of the user interface as well as responsiveness and feature implementation in greater detail from the low fidelity GUIs.
+
+07/10/2024
+
+![Image](Images/figma.png)
+
+The design choices from the initial UI aesthetic were kept in the Figma design but how the grid will need to adjust to different screen sizes were planned here for responsiveness across tablets and phones. Here the goal of being both lightweight and informative are achieved and will be unchanged going forward. Although this visualises only what the home page will look like so another UI was designed regarding the logging page.
+
+![Image](Images/demo.gif)
+
+This HTML file displays an interactive timeline made with CSS and JavaScript connecting to events. The idea from earlier about having two sides to a journal entry of part scrapbook and part map were incorprated here. These text boxes and shapes are for the moment place holder information with this page in future development needing to POST and GET information through REST API to display the entries that the user inputs. 
+
+This idea will now be delivered as a presentation were any feedback will be gathered before the development of a fully programmed web application begins, nearing the end of the define stage of the double diamond methodology.

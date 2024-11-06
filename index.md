@@ -268,3 +268,19 @@ The design choices from the initial UI aesthetic were kept in the Figma design b
 This HTML file displays an interactive timeline made with CSS and JavaScript connecting to events. The idea from earlier about having two sides to a journal entry of part scrapbook and part map were incorporated here. These flex boxes and shapes are for the moment place holder information. This page in future development requires functionality to POST and GET information through REST API to display and store the entries that the user inputs. 
 
 This idea will now be delivered as a presentation to gather feedback before the development of a fully programmed web application begins as the end of the define stage of the double diamond methodology nears.
+
+
+***
+## 2	Programming Web Application ##
+
+06/11/2024
+
+The development of the Trek realisation will be done seperated into three steps to be done in order being
+
+1. Designing a responsive HTML template
+
+2. Incorprating API and front end functionality
+
+3. Back end, sever support and launch
+
+These steps give an order of goals to achieve before shifting the development process to ensure the foundations are executed well to support further development. This was clear from the early prototypes from the conceptualisation stage of this project and prior unrelated projects (Task 1) where challenges arose in creating a responsive web template which can adjust to a change in screen size while maintaining a consistant user interface. The Figma GUIs from section 1.5 of the journal where used as inspiration to create HTML and CSS files with a sole focus on design without planning for functionality.

@@ -288,3 +288,7 @@ These steps give an order of goals to achieve before shifting the development pr
 ![Image](Images/v1.png)
 
 Feedback from prior projects insisted using flexible grid containers with the contents inside being set to take 100% width, which as seen in the image above was highly effective in adjusting to a change in screen size. The blank space will be where a map is displayed with the text boxes displaying recent activity which for now store placeholder text to test how the concept can be displayed. This is the I index/home page where it holds a summary of all functionality and information while maintaining the minimalistic aesthetic aimed for in the conceptualisation research.
+
+![Image](Images/plan.png)
+
+This sketch over the index HTML image visualises the grid containers in the red rectangles. The drawn blue lines is the changes needed to get the desired boxes seen in the figma design. This will require the creation of 3 smaller grid boxes in this division.

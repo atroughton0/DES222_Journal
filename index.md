@@ -384,5 +384,52 @@ Trek is intended to be a multipurpose and adaptable journaling application and t
 
 ![Image](Images/journalv1.png)
 
-The desired layout for this page would be maily ocupied by the map and have buttons to start, stop, and potentialy drop markers down to refer to in later text journaling. This is a very basic design but highly effective at only giving the user the essential information which is required as conveyed in our goal for disconnection. The map-containers and map-section style classes in the CSS were adjusted to achieve this with two buttons made. All that is required is creating JavaScript utalising html geolocation module to gather, display and send geolocation data.
+The desired layout for this page would be maily ocupied by the map and have buttons to start, stop, and potentialy drop markers down to refer to in later text journaling. This is a very basic design but highly effective at only giving the user the essential information which is required as conveyed in our goal for disconnection. The map-containers and map-section style classes in the CSS were adjusted to achieve this with two buttons made. All that is required is creating JavaScript utalising html geolocation module to gather, display and send geolocation data. The outdoor style is set to default in this section over the monochrome design.
 
+![Image](Images/map.png)
+
+```
+                let tripCoordinates = []; // Array starts as empty
+                let tripActive = false; //Recording is off by default
+
+                // Function to start recording the trip
+                function startTrip() { //defining the function of starting a trip and what is then performed
+                    tripActive = true; //recording becomes true
+                    tripCoordinates = [];
+                    if (navigator.geolocation) {
+                        navigator.geolocation.watchPosition(recordLocation, showError, { enableHighAccuracy: true }); //watch position notes the users position overtime with high accuracy on
+                    }
+                    alert("Trip recording started."); // popup message to alert the user
+                }
+```
+
+```
+                    function recordLocation(position) { //function to record position
+                    if (tripActive) { //if trip is being recorded
+                        const currentLocation = [position.coords.longitude, position.coords.latitude]; //find coordinates to define user location
+                        tripCoordinates.push(currentLocation);
+
+                        // Update map with trip path and draw visable line of the journey using tripCoordinates dictionary
+                        map.getSource('tripLine').setData({
+                            "type": "FeatureCollection",
+                            "features": [{
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "LineString",
+                                    "coordinates": tripCoordinates
+                                }
+                            }]
+                        });
+                    }
+                }
+```
+
+```
+function stopTrip() {
+                    tripActive = false; // when trip is stopped
+                    alert("Trip recording stopped."); // alert the user
+                    console.log("Recorded Trip:", tripCoordinates); // send journey coordinates to the console log as saving requires backend
+                }
+```
+
+For now this collected the coordinates of a users journey and saved it to tripCoordinates which is then used to draw the journey and is sent to the console log. In a finalised version with a backend to manage data, this would send the data through restful api to be saved and used in other pages such as the log.html

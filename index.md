@@ -359,3 +359,7 @@ This was fixed with the following CSS
 }
 ```
 
+![Image](Images/indexmap.png)
+
+2 other Map styles and controls were added from the Mapbox API documentation (https://docs.mapbox.com/api/overview/) as the bright white map is not for best use practicaly. Added was an outdoor map which highlights different landscapes and the classic satelite view.
+

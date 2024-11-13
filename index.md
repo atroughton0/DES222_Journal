@@ -19,6 +19,10 @@
 
 **2. Front End Programming**
 
+2.1 Home Page Layout
+
+2.2 Designing the Journaling User Interface
+
 **3. Geolocation and API**
 
 **4. Backend support with Flask**
@@ -361,5 +365,10 @@ This was fixed with the following CSS
 
 ![Image](Images/indexmap.png)
 
-2 other Map styles and controls were added from the Mapbox API documentation (https://docs.mapbox.com/api/overview/) as the bright white map is not for best use practicaly. Added was an outdoor map which highlights different landscapes and the classic satelite view.
+2 other Map styles and controls were added from the Mapbox API documentation (https://docs.mapbox.com/api/overview/) as the bright white map is not for best use practicaly. Added was an outdoor map which highlights different landscapes and the classic satelite view to add further engagement.
+
+![Image](Images/mapchange.gif)
+
+
+## 2.2	Designing the Journaling User Interface ##
 

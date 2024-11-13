@@ -380,4 +380,4 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXRyb3VnaHRvbjAiLCJhIjoiY20ydTVobzk2MDZ4aTJxc
 
 
 ## 2.2	Designing the Journaling User Interface ##
-
+Trek is intended to be a multipurpose and adaptable journaling application and therefore must be able to accept journal entries wheather they have geolocation data or not. This will be split into two html pages with one recording coordinate journies while the other page does the text input. As a map is the core function here, I tried to recycle code from the index html page and see what can be reused and modified.

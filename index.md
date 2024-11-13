@@ -365,6 +365,15 @@ This was fixed with the following CSS
 
 ![Image](Images/indexmap.png)
 
+```
+mapboxgl.accessToken = 'pk.eyJ1IjoiYXRyb3VnaHRvbjAiLCJhIjoiY20ydTVobzk2MDZ4aTJxcG52ZWVmbTVoayJ9.0-MtCojihJsfD5HW-1Z7jw';
+                    const map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/atroughton0/cm35kt3c900zb01pwgl3qbkz7',
+                        zoom: 14
+                    });
+```
+
 2 other Map styles and controls were added from the Mapbox API documentation (https://docs.mapbox.com/api/overview/) as the bright white map is not for best use practicaly. Added was an outdoor map which highlights different landscapes and the classic satelite view to add further engagement.
 
 ![Image](Images/mapchange.gif)

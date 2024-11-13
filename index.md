@@ -291,7 +291,7 @@ The development of the Trek realisation will be done seperated into three steps 
 
 These steps give an order of goals to achieve before shifting the development process to ensure the foundations are executed well to support further development. This was clear from the early prototypes from the conceptualisation stage of this project and prior unrelated projects (Task 1) where challenges arose in creating a responsive web template which can adjust to a change in screen size while maintaining a consistant user interface. The Figma GUIs from section 1.5 of the journal where used as inspiration to create HTML and CSS files with a sole focus on design without planning for functionality.
 
-## 2	Home Page Layout ##
+## 2.1	Home Page Layout ##
 
 Feedback from prior projects insisted using flexible grid containers with the contents inside being set to take 100% width, which as seen in the image above was highly effective in adjusting to a change in screen size. The blank space will be where a map is displayed with the text boxes displaying recent activity which for now store placeholder text to test how the concept can be displayed. This is the I index/home page where it holds a summary of all functionality and information while maintaining the minimalistic aesthetic aimed for in the conceptualisation research.
 
@@ -304,3 +304,58 @@ This sketch over the index HTML image visualises the grid containers in the red 
 A map was designed in Mapbox Studio to be displayed in the blank placeholder space in the home page. This map is purely to display the users location and isn't where the journaling occurs. Initaly a monochrome map with use of serif fonts was decided to achieve that aesthetic of a map a reader would see in a novel and enhance that disconnection experience with the minimal usage of colours.
 
 ![Image](Images/studio.png)
+
+A tokenid and style link was generated which allows the custom map and api functionality to be incorprated in the application. The image bellow displays the first test of using mapbox api in Trek.
+
+![Image](Images/woops.png)
+
+A single CSS file was made rather than using style tags in the html files for greater organisation throughout the repistitory and allowed for easier throubleshooting.
+This was fixed with the following CSS
+
+```
+.map-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+```
+
+```
+.map-container {
+    background-color: #ffffff;
+    border-radius: 12px; /* White boarder around map for a more tidy user interface*/
+    padding: 1%;
+    height: 400px; /* Width uses 100% of map-section and flexes with it*/
+    overflow: hidden;
+    position: relative; /* Respond with flexing section which the map is inside*/
+}
+```
+
+```
+@media (max-width: 768px) { /* When width is less than 768px then update classes*/
+    .app-container { /* App container encompassing everything but the nav*/
+        grid-template-columns: 1fr;
+    }
+
+    .nav-sidebar { /* Nav bar becomes horizontal and is placed at the bottom of the screen*/
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5rem;
+        border-top: 1px solid #eaeaea;
+        background-color: #ffffff;
+        z-index: 1000; /* Is layered in front of everything through the z axis*/
+    }
+
+    .main-content {
+        padding: 1rem;
+        padding-bottom: 70px;
+    }
+}
+```
+

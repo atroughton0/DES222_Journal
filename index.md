@@ -17,6 +17,12 @@
 
 1.5	Development of Selected Concept
 
+**2. Front End Programming**
+
+**3. Geolocation and API**
+
+**4. Backend support with Flask**
+
 ***
 # 1. Conceptualisation # 
 
@@ -271,7 +277,7 @@ This idea will now be delivered as a presentation to gather feedback before the 
 
 
 ***
-## 2	Programming Web Application ##
+## 2	Front End Programming ##
 
 06/11/2024
 

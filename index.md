@@ -29,6 +29,8 @@
 
 3.2 Displaying trips
 
+3.3 Viewing Individual Entries
+
 **4. Geolocation and API**
 
 ***
@@ -641,6 +643,80 @@ This function allows for user input of from journal.html and stores trip data us
 
 This first test was started and ended within a second so the distance, duration and timestamps wont look too interesting but this displays that the concept works. Next is to have these trips sorted into dates and displayed on another page.
 
+Before this though the text input page '/list' needed updating to send its data and images to the 'journal_enties.json' file. Html only required the addition of 1 line to communicate with flask
+
+```
+<form action="/save_journal_entry" method="POST" enctype="multipart/form-data">
+```
+
+A python file had to be defined which not only collected this data like the trips one, but needed to manage how images were accepted and organised. It was decided that for ease of organisation, a sub folder will be automaticly generated inside uploads for the journal entry date that the image is apart of. This allows for images which share a date to be easily grouped in contrast to programming a naming convention which got complex really quickly.
+
+This is the defined function in flask to manage text journal inputs and is split into 2 snipits to see more clearly what does what
+
+```
+@webapplication.route("/save_journal_entry", methods=['POST'])
+def save_journal_entry():
+    raw_date = request.form['date'] #Set the value for the date selected
+    try:
+        date_obj = datetime.strptime(raw_date, "%Y-%m-%d") #Get just the date without the second part of the timestamp
+        formatted_date = date_obj.strftime("%d/%m/%Y") #Format to d/m/y
+        folder_date = date_obj.strftime("%d-%m-%Y")  # Format for folder name
+    except ValueError:
+        formatted_date = raw_date
+        folder_date = raw_date.replace('/', '-') #Swap / for - in folder name, looks nicer :)
+
+    entry_text = request.form['entry'] #Set value for text inputted
+    image = request.files.get('image', None) #Request for the imaged collect if uploaded
+    
+    entry_data = { #Bunch collected data to be stored in json
+        "date": formatted_date,
+        "entry": entry_text,
+        "image_path": None
+    }
+```
+
+```
+#Part 2 - Image storage
+if image:
+        # Create date-specific folder
+        date_folder = os.path.join(UPLOAD_FOLDER, folder_date) #Get date
+        os.makedirs(date_folder, exist_ok=True) #Make only if isnt already existing
+        
+        filename = secure_filename(image.filename)
+        image_path = os.path.join(date_folder, filename)
+        relative_path = os.path.join(folder_date, filename)  
+        image.save(os.path.join('static/uploads', relative_path)) #Save date in the folder just made
+        entry_data["image_path"] = relative_path
+
+    if os.path.exists(JOURNAL_FILE): #Read json file
+        with open(JOURNAL_FILE, 'r') as f:
+            journal_entries = json.load(f)
+    else:
+        journal_entries = []
+
+    # Update existing entry or add new one
+    existing_entry = next((entry for entry in journal_entries  #Add entry if new, append if date exists
+                         if entry['date'] == formatted_date), None)
+    if existing_entry:
+        existing_entry.update(entry_data)
+    else:
+        journal_entries.append(entry_data)
+
+    with open(JOURNAL_FILE, 'w') as f: #Write these changes
+        json.dump(journal_entries, f, indent=2)
+
+    return redirect(url_for('journal')) #Load page
+```
+Copiolet AI assistance was used in troubleshooting how to upload images after many errors. This function was successful at storing text input which again will be later referd to when viewing entries for a date. Storing output can be seen below.
+
+```
+{
+    "date": "10/11/2024",
+    "entry": "testing testing",
+    "image_path": "10-11-2024/Screenshot_2024-11-09_at_9.55.38_pm.png"
+  },
+```
+
 ## 3.2 Displaying trips ##
 
 09/11/2024
@@ -776,5 +852,10 @@ And finally the html section was updated to accomedate a dynamic system of dates
             </div>
 ```
 
-Numerous of dates were added to the json file to test how multiple dates would look like. This final generated design can be seen below
+Numerous of dates were added to the json file to test how multiple dates would look like. This final generated design can be seen below along demonstarting how responsiveness was achieved to adjust to a changing in screen width.
 
+![Image](Images/calendar.png)
+
+![Image](Images/calendaradjust.gif)
+
+## 3.3 Viewing Individual Entries ##

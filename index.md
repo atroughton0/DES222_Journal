@@ -707,7 +707,7 @@ if image:
 
     return redirect(url_for('journal')) #Load page
 ```
-Copiolet AI assistance was used in troubleshooting how to upload images after many errors. This function was successful at storing text input which again will be later referd to when viewing entries for a date. Storing output can be seen below.
+Copiolet AI assistance was used in troubleshooting how to upload images after many errors. This function was successful at storing text input which again will be later referd to when viewing entries for a date. Storing output can be seen below along with the folder creation for dates with an image assigned.
 
 ```
 {
@@ -716,6 +716,8 @@ Copiolet AI assistance was used in troubleshooting how to upload images after ma
     "image_path": "10-11-2024/Screenshot_2024-11-09_at_9.55.38_pm.png"
   },
 ```
+
+![Image](Images/folder.png)
 
 ## 3.2 Displaying trips ##
 
@@ -859,3 +861,9 @@ Numerous of dates were added to the json file to test how multiple dates would l
 ![Image](Images/calendaradjust.gif)
 
 ## 3.3 Viewing Individual Entries ##
+
+Now approaching the end of what is required regarding the functionality criteria in the development stage of the double diamond process is creating the page which combines and displays all the location, text, and image records in the one place. This page will be called log.html and is accessible by clicking the date box displayed in calendar.html (as made possible through this line <div class="date-group" onclick="location.href = '/log?date={{ event.tripDate }}'">)
+
+In the project pitch for Trek, we aspired to deliver a journal system where it was more like a scrapbook where you can adjust pieces of the page, and draw freely to recreate that authentic journaling experience but due to the time constraints of the task and limitations of html and JavaScript will have the goal changed to just display a timeline, drawn map, text input and images. This provides a detailed summary of a recorded day efficiently in html. This design was sketched below to display roughly how it can look to achieve this goal.
+
+![Image](Images/logsketch.png)

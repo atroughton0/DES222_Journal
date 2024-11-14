@@ -25,6 +25,10 @@
 
 **3. Backend support with Flask**
 
+3.1 Using HTTP Requests
+
+3.2 Displaying trips
+
 **4. Geolocation and API**
 
 ***
@@ -545,3 +549,136 @@ def setting():
 @webapplication.route('/calendar')
 def calendar():
 ```
+At the moment all this python file with the module flask is doing is it allows for the html files to load by defining the url and the file which is loaded. A couple of minor adjustments were made to have the application work run from python. Firstly the code for navigation in the html files were adjusted slightly to reference the route rather than the file name. Flask requires for the HTML files to be placed in a holder called 'templates' and the style.css and images used were placed in a folder called 'static'.
+
+```
+<a href="journal.html">  --- CHANGED TO ---> <a href="/journal">
+```
+## 3.1 Using HTTP Requests ##
+
+REST API in the Trek application will be used to send data by communicating with http requests from the frontend and backend of the application. This creates the core functionality of having user inputs displayed in other parts of the application. As seen in the itital design of the index page in section 2.1, requests are required to gather stored data to calculate the monthly insights. This though requires user data to be present first so we will start with creating the method to get the trips stored in a trips.json file.
+
+The javascript used to send trip details to the console in section 2.2 of the journal already collects the information needed and only requires slight adjustment to communicate with the python file. 
+
+```
+ if (tripData && tripData.length > 0) {
+                    drawJourneyPath(); // Draw the trip on the map using the coordinates recorded
+                    
+                    const tripDetails = { // get what values are stored in tripDetails
+                        dayOfWeek: getDayOfWeek(tripData[0]?.timestamp), // Only record the day part from the timestamp
+                        startTime: formatTimestamp(tripData[0]?.timestamp), //The timestamp when the trip started
+                        endTime: formatTimestamp(tripData[tripData.length - 1]?.timestamp), //The timestamp when the trip ended
+                        coordinates: tripData.map(entry => ({ // Records location and at what time
+                            timestamp: formatTimestamp(entry.timestamp),
+                            location: entry.coordinates
+                        })),
+                        distance: Math.round(runningDistance), //Round distance in metres
+                        duration: tripData[tripData.length - 1]?.timestamp - tripData[0]?.timestamp //Calculate how long the trip was
+                    };
+
+                    fetch('/save_trip', { //Communication method with flask file
+                        method: 'POST', //Method is POST
+                        headers: {
+                            'Content-Type': 'application/json', //For json file
+                        },
+                        body: JSON.stringify(tripDetails) //Formatted to be stored as a json file using jsonify module
+                    })
+                    .then(response => response.json())
+                    .then(data => console.log("Trip data saved:", data)) //For trouble shooting if successfull
+                    .catch(error => console.error("Error saving trip data:", error)); //For troubleshooting an error
+                    console.log(tripData) //Display values in console
+                } else {
+                    alert("Tracking data is empty. Try moving around and restarting tracking."); //If trip failed, alert the user
+                }
+```
+
+This javascript allows for the collected values to be gathered under tripDetails and send to the python file using the 'POST' method. Now the function of '/save_trip' must be defined in the python file. 
+
+```
+JOURNAL_FILE = 'journal_entries.json' #The json files are globally defied
+TRIPS_FILE = 'trips.json'
+```
+
+```
+@webapplication.route("/save_trip", methods=['POST']) # Matching route and method to the JavaScript
+def save_trip():
+    try:
+        trip_data = request.json # Give a value to the json file
+        if os.path.exists(TRIPS_FILE):
+            with open(TRIPS_FILE, 'r') as f: # Find and read the json file
+                trips = json.load(f)
+        else:
+            trips = []
+        
+        trip_data['id'] = len(trips) + 1 # Gives a unique id to a trip by adding 1 based on the total amount of entries
+        trips.append(trip_data) # Add trip to trips
+        
+        with open(TRIPS_FILE, 'w') as f: # Open json file to write
+            json.dump(trips, f, indent=2) # Better organisation
+```
+
+This function allows for user input of from journal.html and stores trip data using geolocation apis.
+
+```
+{
+    "dayOfWeek": "Friday",
+    "startTime": "08/11/2024 22:28:41",
+    "endTime": "08/11/2024 22:28:41",
+    "coordinates": [
+      {
+        "timestamp": "08/11/2024 22:28:41",
+        "location": [
+          153.04146398847675,
+          -27.236568437880734
+        ]
+      }
+    ],
+    "distance": 0,
+    "duration": 0,
+    "id": 1
+  },
+```
+
+This first test was started and ended within a second so the distance, duration and timestamps wont look too interesting but this displays that the concept works. Next is to have these trips sorted into dates and displayed on another page.
+
+## 3.2 Displaying trips ##
+
+09/11/2024
+
+The idea is that all trips will need to be made visable on a page which allows the user to select a trip to view the journal entries for that day. This was done initialy by using the following html
+
+```
+<div class="calendar-container">
+    {% if tripDate %} <!-- If a trip date exists... -->
+        {% for trips in tripDate %} <!-- Look for each individual trip in that date -->
+                            <h2>{{ event.day }}</h2>  <!-- Display the day and date -->
+                            <h5>{{ event.tripDate }}</h5>
+                        </div> <!-- Repeat for each day -->
+</div>
+```
+
+the python allowing for this to happen was
+
+```
+@webapplication.route('/calendar')
+def calendar():
+    try:
+        # Load trips data
+        with open(TRIPS_FILE, 'r') as f:
+            trips = json.load(f)
+        
+        # Extract dates and details from trips
+        trip_events = [
+            {
+                'tripDate': trip['startTime'].split()[0],
+                'time': trip['startTime'].split()[1],
+                'day': trip['dayOfWeek'],
+                'description': f"Trip #{trip['id']} - Distance: {format_distance(trip['distance'])}"
+            }
+            for trip in trips
+        ]
+```
+
+This generated the following page
+
+

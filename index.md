@@ -1070,7 +1070,7 @@ I hope the readers and all involved stakeholders can see the how the task ration
 
 The video demonstration of Trek can be viewed by using the following link below
 
-<strong> https://youtu.be/HGuM4O3W1jg <strong>
+[Trek Video Demonstration](https://youtu.be/HGuM4O3W1jg)
 
 <strong> Again thank you for following the Trek journey! <strong>
 

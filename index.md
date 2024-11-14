@@ -1,4 +1,4 @@
-## DES222: Assessment 2
+## DES222: Assessment 3
 #### Aaron Troughton, 1167270 ####
 # Journal Title: ‘Location Based Diary’ #
 
@@ -332,18 +332,15 @@ A single CSS file was made rather than using style tags in the html files for gr
 This was fixed with the following CSS
 
 ```
-/* 
 .map-section {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 2rem;
 }
-*/
 ```
 
 ```
-/* 
 .map-container {
     background-color: #ffffff;
     border-radius: 12px; /* White boarder around map for a more tidy user interface*/
@@ -352,11 +349,9 @@ This was fixed with the following CSS
     overflow: hidden;
     position: relative; /* Respond with flexing section which the map is inside*/
 }
-*/
 ```
 
 ```
-/* 
 @media (max-width: 768px) { /* When width is less than 768px then update classes*/
     .app-container { /* App container encompassing everything but the nav*/
         grid-template-columns: 1fr;
@@ -381,7 +376,6 @@ This was fixed with the following CSS
         padding-bottom: 70px;
     }
 }
-*/
 ```
 
 ![Image](Images/indexmap.png)
@@ -746,11 +740,16 @@ The idea is that all trips will need to be made visable on a page which allows t
 
 ```
 <div class="calendar-container">
-    {% if tripDate %} <!-- If a trip date exists... -->
-        {% for trips in tripDate %} <!-- Look for each individual trip in that date -->
-                            <h2>{{ event.day }}</h2>  <!-- Display the day and date -->
-                            <h5>{{ event.tripDate }}</h5>
-                        </div> <!-- Repeat for each day -->
+  {% if tripData %}
+    {% for event in tripData %}
+      <div class="date-group">
+        <h2>{{ event.day }}</h2>
+        <h5>{{ event.tripDate }}</h5>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p class="no-events">No trips recorded yet.</p>
+  {% endif %}
 </div>
 ```
 

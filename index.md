@@ -23,9 +23,9 @@
 
 2.2 Designing the Journaling User Interface
 
-**3. Geolocation and API**
+**3. Backend support with Flask**
 
-**4. Backend support with Flask**
+**4. Geolocation and API**
 
 ***
 # 1. Conceptualisation # 
@@ -509,3 +509,39 @@ The initial design without styling displays how minimal needs to be while provid
 
 This CSS is visualised in the image below.
 
+![Image](Images/textjournal.png)
+
+The two remaining pages to be designed is the calendar and settings html files. The calendar page would need to feature a dynamic api which has its display made through user input and therefore requires the construction of the flask python file as a backend to send and recieve user input from storage files either being json, csv, or database files. The settings page in final lauch will idealy by were the user would adjust the look of the app such as fonts, colours, and access account information such as logging in and out but these options will not be prioritised in this task and will only be done if it fits the limited time constraints.
+
+## 3. Backend support with Flask ##
+
+Flask is a web framework for python and allows to view and test the Trek webapplication locally with access to backend features such as retrieving data from storage files. Twp JSON files will be selected to be used to storage location trip data, and text journal inputs as the nested structure of JSON files and the support for arrays makes it the ideal choice when querying both the trip and journal details when required. 
+
+```
+from flask import *
+import random, sqlite3, requests, json, os
+webapplication = Flask(__name__)
+webapplication.secret_key = "session"
+
+##Load Index HTML page##
+@webapplication.route("/", methods=['GET'])
+def WebRoot():
+    return render_template("index.html")
+
+#---------------------------------------------------------#
+##Create URL Links to HTML Files##
+@webapplication.route("/journal")
+def journal():
+    return render_template("journal.html")
+
+@webapplication.route("/list")
+def list():
+    return render_template("text.html")
+
+@webapplication.route("/settings")
+def setting():
+    return render_template("setting.html")
+
+@webapplication.route('/calendar')
+def calendar():
+```

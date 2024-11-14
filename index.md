@@ -332,6 +332,7 @@ A single CSS file was made rather than using style tags in the html files for gr
 This was fixed with the following CSS
 
 ```
+<!-- 
 .map-section {
     display: flex;
     flex-direction: column;
@@ -376,6 +377,7 @@ This was fixed with the following CSS
         padding-bottom: 70px;
     }
 }
+-->
 ```
 
 ![Image](Images/indexmap.png)

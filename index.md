@@ -440,4 +440,72 @@ For now this collected the coordinates of a users journey and saved it to tripCo
 
 The next aspect to journaling is text input. This would have the user select a date, write a description and upload an image if they wanted to. This date will be used as a value to connect to trip journaling is a date is shared. This would be done in python but for now only the user interface was being designed at the current stage.
 
+![Image](Images/textv1.png)
+
+```
+                <div>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required> <!-- Required means date and description must be selected before sending -->
+                    </div>
+                    
+                    <div>
+                        <label for="entry">Journal Entry</label>
+                        <textarea id="entry" name="entry" rows="4" placeholder="Write about your trek..." required></textarea> 
+                    </div>
+                    
+                    <div>
+                        <label for="image">Photos</label>
+                        <input type="file" id="image" name="image" accept="image/*"> <!-- Image files will be determined in python file -->
+                </div>
+
+```
+The initial design without styling displays how minimal needs to be while providing the needed functionality. Just like the journal.html file prior, styling is fairly straightfoward and will consist of a flexable box taking 100% width in the app section will the input boxes from the original design.
+
+```
+.journal-entry-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journal-entry-section label {
+    font-weight: 500;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.journal-entry-section input[type="date"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1a1a1a;
+    background-color: #f8f9fa;
+}
+
+.journal-entry-section textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-height: 200px;
+    resize: vertical;
+    background-color: #f8f9fa;
+}
+
+.journal-entry-section input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+```
+
+This CSS is visualised in the image below.
 

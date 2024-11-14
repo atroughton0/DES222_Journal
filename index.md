@@ -31,7 +31,15 @@
 
 3.3 Viewing Individual Entries
 
-**4. Geolocation and API**
+3.4 Last Refinements
+
+**4 Delivery**
+
+4.1 Hosting
+
+4.2 Future Improvements
+
+4.3 Demonstration
 
 ***
 # 1. Conceptualisation # 
@@ -301,6 +309,7 @@ The development of the Trek realisation will be done seperated into three steps 
 
 These steps give an order of goals to achieve before shifting the development process to ensure the foundations are executed well to support further development. This was clear from the early prototypes from the conceptualisation stage of this project and prior unrelated projects (Task 1) where challenges arose in creating a responsive web template which can adjust to a change in screen size while maintaining a consistant user interface. The Figma GUIs from section 1.5 of the journal where used as inspiration to create HTML and CSS files with a sole focus on design without planning for functionality.
 
+***
 ## 2.1	Home Page Layout ##
 
 Feedback from prior projects insisted using flexible grid containers with the contents inside being set to take 100% width, which as seen in the image above was highly effective in adjusting to a change in screen size. The blank space will be where a map is displayed with the text boxes displaying recent activity which for now store placeholder text to test how the concept can be displayed. This is the I index/home page where it holds a summary of all functionality and information while maintaining the minimalistic aesthetic aimed for in the conceptualisation research.
@@ -384,7 +393,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXRyb3VnaHRvbjAiLCJhIjoiY20ydTVobzk2MDZ4aTJxc
 
 ![Image](Images/mapchange.gif)
 
-
+***
 ## 2.2	Designing the Journaling User Interface ##
 Trek is intended to be a multipurpose and adaptable journaling application and therefore must be able to accept journal entries wheather they have geolocation data or not. This will be split into two html pages with one recording coordinate journies while the other page does the text input. As a map is the core function here, I tried to recycle code from the index html page and see what can be reused and modified.
 
@@ -519,6 +528,7 @@ This CSS is visualised in the image below.
 
 The two remaining pages to be designed is the calendar and settings html files. The calendar page would need to feature a dynamic api which has its display made through user input and therefore requires the construction of the flask python file as a backend to send and recieve user input from storage files either being json, csv, or database files. The settings page in final lauch will idealy by were the user would adjust the look of the app such as fonts, colours, and access account information such as logging in and out but these options will not be prioritised in this task and will only be done if it fits the limited time constraints.
 
+***
 ## 3. Backend support with Flask ##
 
 Flask is a web framework for python and allows to view and test the Trek webapplication locally with access to backend features such as retrieving data from storage files. Twp JSON files will be selected to be used to storage location trip data, and text journal inputs as the nested structure of JSON files and the support for arrays makes it the ideal choice when querying both the trip and journal details when required. 
@@ -556,6 +566,8 @@ At the moment all this python file with the module flask is doing is it allows f
 ```
 <a href="journal.html">  --- CHANGED TO ---> <a href="/journal">
 ```
+
+***
 ## 3.1 Using HTTP Requests ##
 
 REST API in the Trek application will be used to send data by communicating with http requests from the frontend and backend of the application. This creates the core functionality of having user inputs displayed in other parts of the application. As seen in the itital design of the index page in section 2.1, requests are required to gather stored data to calculate the monthly insights. This though requires user data to be present first so we will start with creating the method to get the trips stored in a trips.json file.
@@ -719,6 +731,7 @@ Copiolet AI assistance was used in troubleshooting how to upload images after ma
 
 ![Image](Images/folder.png)
 
+***
 ## 3.2 Displaying trips ##
 
 09/11/2024
@@ -860,6 +873,7 @@ Numerous of dates were added to the json file to test how multiple dates would l
 
 ![Image](Images/calendaradjust.gif)
 
+***
 ## 3.3 Viewing Individual Entries ##
 
 Now approaching the end of what is required regarding the functionality criteria in the development stage of the double diamond process is creating the page which combines and displays all the location, text, and image records in the one place. This page will be called log.html and is accessible by clicking the date box displayed in calendar.html (as made possible through this line 
@@ -927,3 +941,90 @@ The map script and styling is the same that was used in the home page and journa
 
 The first design already has some cropped text and doesn't adhere to the goal for responsiveness but displays that the concept was met and needs some refinement to improve this. Displayed are the map which as the trip was less than a second doesnt have it drawn, the trip/s, the text and the image uploaded. This has created a successful way to journal while using multimedia and demonstartes the core functionality that is expected from Trek.
 
+These refinements produced this final view. This date has no text input and displays how it can dynamically adjust and remove to a section with no input. 
+
+![Image](Images/finallog.png)
+
+***
+## 3.4 Last Refinements ##
+
+12/11/2024
+
+This web application is now capable of retrieving input from the user, gathering location date through geolocation api,  communicating the input to other pages of the web app, and displaying a complete journal entry with the Mapbox API. The functional requirements have been achieved but can be further improved and refined before the dilivery part of the double diamond process.
+
+![Image](Images/goals.png)
+
+This note displayed the final parts of the web application which needed attention. Most are small changes to styling to improve responsiveness but one more complex feature was to go back to the home page and display replace the placeholder values in monthly insights with values calculated with user input.
+
+It was determined to change this to weekly as monthly is too long of a time range to really be useful.
+
+The index route in the python file was updated to perform these tasks and can be seen below.
+
+```
+@webapplication.route("/", methods=['GET'])
+def index():
+    try:
+        # Load trip data #opens trip json file to read
+        with open(TRIPS_FILE, 'r') as f:
+            trips = json.load(f)
+
+        # Get the date 7 days ago
+        today = datetime.today() #Finds the present date
+        seven_days_ago = today - timedelta(days=7) # subtracts 7 to find the start to the week
+
+        # Filter trips from the last 7 days
+        recent_trips = [
+            trip for trip in trips 
+            if datetime.strptime(trip['startTime'].split()[0], "%d/%m/%Y") >= seven_days_ago
+        ]
+        
+        # Calculate weekly insights for the three text boxes
+        total_distance = sum(trip['distance'] for trip in recent_trips) # Sum of distance in the past week recorded
+        total_entries = len(recent_trips) # Number of trips
+        total_duration = sum(trip['duration'] for trip in recent_trips) # sum of trip duration in the past week
+
+        # Format and group the insights to be post
+        weekly_insights = {
+            "distance": format_distance(total_distance),
+            "entries": total_entries,
+            "duration": format_duration(total_duration),
+        }
+
+        # Extract details for each trip 
+        trip_events = [
+            {
+                'tripDate': trip['startTime'].split()[0],
+                'day': trip['dayOfWeek'],
+                'coordinates': trip['coordinates'][0]['location'] if trip['coordinates'] else None,
+                'description': f"Trip #{trip['id']} - Distance: {format_distance(trip['distance'])}"
+            }
+            for trip in recent_trips
+        ]
+
+        # Sort trips by date in descending order
+        recent_events = sorted(
+            trip_events, 
+            key=lambda x: datetime.strptime(x['tripDate'], "%d/%m/%Y"), 
+            reverse=True
+        )[:3]
+
+        # Pass insights and recent events to the index template
+        return render_template('index.html', 
+                               recent_trips=recent_events, 
+                               weekly_insights=weekly_insights)
+```
+This replaces the placeholder values with actual recorded data.
+
+***
+## 4 Delivering ##
+
+14/11/2024
+
+***
+## 4.1 Hosting ##
+
+***
+## 4.2 Future Improvements ##
+
+***
+## 4.3 Demonstration ##

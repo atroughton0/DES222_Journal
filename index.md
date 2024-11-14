@@ -332,16 +332,18 @@ A single CSS file was made rather than using style tags in the html files for gr
 This was fixed with the following CSS
 
 ```
-<!-- 
+/* 
 .map-section {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 2rem;
 }
+*/
 ```
 
 ```
+/* 
 .map-container {
     background-color: #ffffff;
     border-radius: 12px; /* White boarder around map for a more tidy user interface*/
@@ -350,9 +352,11 @@ This was fixed with the following CSS
     overflow: hidden;
     position: relative; /* Respond with flexing section which the map is inside*/
 }
+*/
 ```
 
 ```
+/* 
 @media (max-width: 768px) { /* When width is less than 768px then update classes*/
     .app-container { /* App container encompassing everything but the nav*/
         grid-template-columns: 1fr;
@@ -377,7 +381,7 @@ This was fixed with the following CSS
         padding-bottom: 70px;
     }
 }
--->
+*/
 ```
 
 ![Image](Images/indexmap.png)

@@ -33,7 +33,7 @@
 
 3.4 Last Refinements
 
-**4 Delivery**
+**4 Delivery and Reflection**
 
 4.1 Hosting
 
@@ -1016,15 +1016,49 @@ def index():
 This replaces the placeholder values with actual recorded data.
 
 ***
-## 4 Delivering ##
+## 4 Delivery and Reflection ##
 
 14/11/2024
+
+Looking back at the start of the journal where the idea was developed from a simple prompt, you can see how the idea has changed and been formed overtime throughout this journal. Before the delivery through hosting server, the goals and ideations will be compared to the developed Trek web application to see how successful it is at meeting the task goals and the desired functionality requirements.
+
+![Image](Images/Padlet.png)
+
+Trek almost perfectly satisfies the prompt which started this whole project. Trek allows the user to record days and capture them in great detail. Learning my lessons from prior tasks (task 1), a lot more time was invested into styling in CSS to make the application responsive through more approapiate usage of grid and flex containers with its items using 100% of the width. Is absolutely a mapped diary but only falls short on a map which has its images placed on where it was taken as inspired by one of the existing designs senn in Apple Maps but would have been overkill and out of the scope of the design purpose fueling this project.
+
+✅ The ability to add photos, notes, and even short audio recordings to each point on the timeline.
+
+The application does support multimedia, although not to the level of supporting audio recordings and a timeline but you could say the failure to add this range of note taking is a blessing in disguise when you consider the task purpose of taking away distractions, staying disconnected and not spending alot of time focusing on what is added to the journal and maintaining its minimal aesthetic.
+
+❌ Timeline view that allows users to scroll through their journey chronologically, with entries displayed alongside the map.
+
+A timelines and marked locations was not included in the final version of Trek and would definitely be an area to expand on in future versions of the app but as mentioned with the last point it isn't a major miss and didn't effect the effectiveness of achieving the task goal.
+
+✅ Group and filter entries
+
+This is displayed in the calender.html with its entries grouped into days and then displayed in a calendar like format and again in the home page with the calculated insights which dynamically change through the use of grouped and filtered entries which output from the python file
+
+✅ View travel history through an engaging and minimalistic interface
+
+The log.html page was highly effective at capturing a day in displaying its data as minimal as possible while being understandable and engaging to the user
+
+✅ Creation of context awareness through the usage of the MapBoxes API and Media Capture API
+
+APIs were fundamental to how this app works and would not be possible without geolocation API to gather location data, and Mapboxes API to display the data with context awareness. Media capture API was however not included but wasn't required as the python file did all the image handeling but can be useful as being able to take pictures directly from the application which will be discussed in future improvements below.
 
 ***
 ## 4.1 Hosting ##
 
+With Trek completed it was time to see if the web application can connect to a server and be accessed over the web for external access. Pythonanywhere, Replit, and Railway were all tried but each came back with errors about loading templates or data not working. Due to the time constraints, it seemed like the apps code would have to be all changed to be dedicated to these hosting services and was unrealistic when trying to test the app. To test responsiveness and mobile usage, the app connected to the laptop by changing the port to 'flask run --host=0.0.0.0' to be listenable on all networks and was used in the final demonstration video. Support for servers and hosting will be explored further in section 4.2 below.
+
 ***
 ## 4.2 Future Improvements ##
+
+I am extremely happy with Trek and its functionality despite a few minor features which were not present in the final project. The main part that I would like explored in future refinements is incorprating a scrapbook like form of journaling and make that you can freely draw, place videos, audio snipits, and more, and a timeline feature with markers in the trip journaling and log pages. As we found out, these features cannot be effectively made on a web application without making another dedicated web to perform these tasks (scrapbook). This suggests that Trek would be more suitable as a mobile app with access to local storage to keep user data secure and take advantage of the power of the users' devices. If it remains a web app, a data base and log in features is a must as all user data can be reviewed by another is another user has access to this web application which greatly goes against data protection guidelines. For hosting, Node.js and Node Express may be the easier option of making Trek accessible over Flask and allow for improve maintenance, scaliability, and flexable form. 
+
+I hope the readers and all involved stakeholders can see the how the task rationale and design goals have been achieved in Trek and see how these ideas flowed from start to finish. Please view the demonstration video below to see Trek in action.
+
+<strong> Rationale </strong> - The goal and expected outcome for this project's application to achieve by the end of the design process would be to support a healthier relationship with technology in everyday life by embracing digital wellbeing, promoting mindfulness, as well as presenting moment awareness through the simplicity of an adaptive journal to store meaningful experiences. 
 
 ***
 ## 4.3 Demonstration ##

@@ -681,4 +681,100 @@ def calendar():
 
 This generated the following page
 
+![Image](Images/calendarv1.png)
+
+As displayed, trips are organised by there date -'startTime'- and provide a summary of the trips statistics. This displays that details of a trip is being recieved but the python, html and css will need to be adjusted to achieve the ideal user interface depicted in the sketch below. This has only the date of trips displayed which will then direct the user to a log page which combines all the entries sharing a date and displays text input and images with the same date. Another issue is that only trips are currently displayed here and will also need to display text entries without a trip.
+
+![Image](Images/calendarsketch.png)
+
+This had the '/calendar function' changed to satisfy these needs
+
+```
+@webapplication.route('/calendar')
+def calendar():
+    try:
+        # Load trips data
+        with open(TRIPS_FILE, 'r') as f:
+            trips = json.load(f)
+
+        # Load journal entries data
+        with open(JOURNAL_FILE, 'r') as f:
+            journal_entries = json.load(f)
+        
+        # Extract dates and details from trips
+        trip_events = [
+            {
+                'tripDate': trip['startTime'].split()[0],
+                'time': trip['startTime'].split()[1],
+                'day': trip['dayOfWeek'],
+                'description': f"Trip #{trip['id']} - Distance: {format_distance(trip['distance'])}"
+            }
+            for trip in trips
+        ]
+        
+        # Extract dates and details from journal entries
+        journal_events = [
+            {
+                'tripDate': datetime.strptime(entry['date'], "%d/%m/%Y").strftime("%d/%m/%Y"),
+                'time': None,
+                'day': datetime.strptime(entry['date'], "%d/%m/%Y").strftime("%A"),
+                'description': "Journal Entry"
+            }
+            for entry in journal_entries
+        ]
+
+        # Combine events by date, both trip and text entries
+        combined_events_dict = {}
+        for event in trip_events + journal_events:
+            date = event['tripDate']
+            if date not in combined_events_dict:
+                combined_events_dict[date] = {
+                    'tripDate': date,
+                    'day': event['day'],
+                    'events': [event['description']]
+                }
+            else:
+                combined_events_dict[date]['events'].append(event['description'])
+
+        # Sort combined events in descending order by date
+        combined_events = sorted(
+            combined_events_dict.values(),
+            key=lambda x: datetime.strptime(x['tripDate'], "%d/%m/%Y"), #Formats the day into d/m/y as this is not the default standard
+            reverse=True #Order is reversed to display the most recent trip first
+        )
+
+        # Pass combined events to the calendar template
+        return render_template('calendar.html', events=combined_events) # Sorted order is sent
+```
+
+This css was refined to achieve the look of a traditional calendar as put in the snipit below
+
+```
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 16px;
+    width: 100%;
+}
+```
+
+And finally the html section was updated to accomedate a dynamic system of dates being added and redirecting the user to the page of the date selected
+
+```
+ <div class="calendar-container">
+                {% if events %}
+                    {% for event in events %}
+                        <div class="date-group" onclick="location.href = '/log?date={{ event.tripDate }}'">
+                            <h2>{{ event.day }}</h2>
+                            <h5>{{ event.tripDate }}</h5>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="no-events">No trips recorded yet.</p>
+                {% endif %}
+            </div>
+```
+
+Numerous of dates were added to the json file to test how multiple dates would look like. This final generated design can be seen below
 

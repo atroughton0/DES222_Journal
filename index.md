@@ -862,8 +862,12 @@ Numerous of dates were added to the json file to test how multiple dates would l
 
 ## 3.3 Viewing Individual Entries ##
 
-Now approaching the end of what is required regarding the functionality criteria in the development stage of the double diamond process is creating the page which combines and displays all the location, text, and image records in the one place. This page will be called log.html and is accessible by clicking the date box displayed in calendar.html (as made possible through this line <div class="date-group" onclick="location.href = '/log?date={{ event.tripDate }}'">)
+Now approaching the end of what is required regarding the functionality criteria in the development stage of the double diamond process is creating the page which combines and displays all the location, text, and image records in the one place. This page will be called log.html and is accessible by clicking the date box displayed in calendar.html (as made possible through this line 
+
+```
+<div class="date-group" onclick="location.href = '/log?date={{ event.tripDate }}'">
+```
 
 In the project pitch for Trek, we aspired to deliver a journal system where it was more like a scrapbook where you can adjust pieces of the page, and draw freely to recreate that authentic journaling experience but due to the time constraints of the task and limitations of html and JavaScript will have the goal changed to just display a timeline, drawn map, text input and images. This provides a detailed summary of a recorded day efficiently in html. This design was sketched below to display roughly how it can look to achieve this goal.
 
-![Image](Images/logsketch.png)
+![Image](Images/log sketch.png)

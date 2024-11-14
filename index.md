@@ -433,3 +433,11 @@ function stopTrip() {
 ```
 
 For now this collected the coordinates of a users journey and saved it to tripCoordinates which is then used to draw the journey and is sent to the console log. In a finalised version with a backend to manage data, this would send the data through restful api to be saved and used in other pages such as the log.html
+
+![Image](Images/log.png)
+
+08/11/2024
+
+The next aspect to journaling is text input. This would have the user select a date, write a description and upload an image if they wanted to. This date will be used as a value to connect to trip journaling is a date is shared. This would be done in python but for now only the user interface was being designed at the current stage.
+
+
